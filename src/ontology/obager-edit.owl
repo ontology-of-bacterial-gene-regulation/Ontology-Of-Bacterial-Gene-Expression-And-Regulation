@@ -1779,6 +1779,7 @@ We also have the outstanding issue of how to aim different definitions to differ
         </owl:equivalentClass>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a segment of an mRNA that interacts with the complementary anti-Shine Dalgarno (anti-SD) sequence in the 16S ribosomal RNA to recruit the ribosome small subunit (SSU, 30S) to the ribosome binding site (RBS) during SD-led initiation of translation</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID: ﻿29661790</obo:IAO_0000119>
+        <rdfs:comment>cambiar la propiedad que une shine-delgarno y coding sequence a &quot;locates tranlation initiation of&quot;.</rdfs:comment>
         <rdfs:label xml:lang="en">shine-dalgarno sequence</rdfs:label>
     </owl:Class>
     
@@ -2111,9 +2112,9 @@ We also have the outstanding issue of how to aim different definitions to differ
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a molecular entity that is carried or encoded in the genome</obo:IAO_0000115>
-        <rdfs:comment>Since the genetic code is used to translate RNA into protein, we use the broader term &apos;carried&apos; to include RNAs that are carried but not encoded in the genome.</rdfs:comment>
-        <rdfs:label xml:lang="en">genetically carried biomacromolecular entity</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a molecular entity whose structure or sequence is specified by genetic information contained in the genome.</obo:IAO_0000115>
+        <rdfs:comment>Since the genetic code is used to translate RNA into protein, we use the broader term &apos;carried&apos; to include RNAs that are carried but not encoded in the genome. All encoded molecules are also carried in the genome.</rdfs:comment>
+        <rdfs:label xml:lang="en">genetically specified biomacromolecular entity</rdfs:label>
     </owl:Class>
     
 
@@ -2220,8 +2221,8 @@ We also have the outstanding issue of how to aim different definitions to differ
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000077"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a regulator that is a molecule or a molecule segment carried in the genome and that has a mechanism of activation or deactivation</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">genomically carried regulator</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A regulator that is a molecule or molecular segment whose structure or sequence is specified by information encoded in the genome, and that has a mechanism of activation or deactivation.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">genomically specified regulator</rdfs:label>
     </owl:Class>
     
 
@@ -2465,7 +2466,7 @@ COB_0000013</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000093">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000092"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a molecular entity that is not carried in the genome</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a molecular entity that is not directly carried nor encoded in the genome</obo:IAO_0000115>
         <rdfs:label xml:lang="en">small molecule</rdfs:label>
     </owl:Class>
     
@@ -2515,7 +2516,7 @@ COB_0000013</obo:IAO_0000119>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000096">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000071"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a genetically carried biomacromolecular entity that is part of a polymeric chain</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">genetically carried biomacromolecular segment</rdfs:label>
+        <rdfs:label xml:lang="en">genetically specified biomacromolecular segment</rdfs:label>
     </owl:Class>
     
 
@@ -2525,7 +2526,7 @@ COB_0000013</obo:IAO_0000119>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000097">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000071"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a biomacromolecular entity that consists of one or more complete polymeric chains</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">genetically carried biomacromolecule</rdfs:label>
+        <rdfs:label xml:lang="en">genetically specified biomacromolecule</rdfs:label>
     </owl:Class>
     
 
