@@ -1,5 +1,5 @@
-[![Build Status](https://travis-ci.org/ontology-of-bacterial-gene-expression-and-regulation/Ontology-Of-Bacterial-Gene-Expression-And-Regulation.svg?branch=master)](https://travis-ci.org/ontology-of-bacterial-gene-expression-and-regulation/Ontology-Of-Bacterial-Gene-Expression-And-Regulation)
-[![DOI](https://zenodo.org/badge/13996/ontology-of-bacterial-gene-expression-and-regulation/Ontology-Of-Bacterial-Gene-Expression-And-Regulation.svg)](https://zenodo.org/badge/latestdoi/13996/ontology-of-bacterial-gene-expression-and-regulation/Ontology-Of-Bacterial-Gene-Expression-And-Regulation)
+[![Build Status](https://travis-ci.org/ontology-of-bacterial-gene-regulation/Ontology-Of-Bacterial-Gene-Expression-And-Regulation.svg?branch=master)](https://travis-ci.org/ontology-of-bacterial-gene-regulation/Ontology-Of-Bacterial-Gene-Expression-And-Regulation)
+[![DOI](https://zenodo.org/badge/13996/ontology-of-bacterial-gene-regulation/Ontology-Of-Bacterial-Gene-Expression-And-Regulation.svg)](https://zenodo.org/badge/latestdoi/13996/ontology-of-bacterial-gene-regulation/Ontology-Of-Bacterial-Gene-Expression-And-Regulation)
 
 # ontology-of-bacterial-gene-expression-and-regulation
 
@@ -23,7 +23,7 @@ Editors of this ontology should use the edit version, [src/ontology/obager-edit.
 
 ## Contact
 
-Please use this GitHub repository's [Issue tracker](https://github.com/ontology-of-bacterial-gene-expression-and-regulation/Ontology-Of-Bacterial-Gene-Expression-And-Regulation/issues) to request new terms/classes or report errors or specific concerns related to the ontology.
+Please use this GitHub repository's [Issue tracker](https://github.com/ontology-of-bacterial-gene-regulation/Ontology-Of-Bacterial-Gene-Expression-And-Regulation/issues) to request new terms/classes or report errors or specific concerns related to the ontology.
 
 ## Acknowledgements
 

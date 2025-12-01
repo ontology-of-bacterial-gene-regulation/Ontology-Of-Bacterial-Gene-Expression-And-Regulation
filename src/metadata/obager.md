@@ -3,10 +3,10 @@ layout: ontology_detail
 id: obager
 title: Ontology of Bacterial Gene Expression and Regulation
 jobs:
-  - id: https://travis-ci.org/ontology-of-bacterial-gene-expression-and-regulation/Ontology-Of-Bacterial-Gene-Expression-And-Regulation
+  - id: https://travis-ci.org/ontology-of-bacterial-gene-regulation/Ontology-Of-Bacterial-Gene-Expression-And-Regulation
     type: travis-ci
 build:
-  checkout: git clone https://github.com/ontology-of-bacterial-gene-expression-and-regulation/Ontology-Of-Bacterial-Gene-Expression-And-Regulation.git
+  checkout: git clone https://github.com/ontology-of-bacterial-gene-regulation/Ontology-Of-Bacterial-Gene-Expression-And-Regulation.git
   system: git
   path: "."
 contact:
@@ -14,13 +14,13 @@ contact:
   label: Citlalli Mejía Almonte
 description: Ontology of Bacterial Gene Expression and Regulation is an ontology...
 domain: stuff
-homepage: https://github.com/ontology-of-bacterial-gene-expression-and-regulation/Ontology-Of-Bacterial-Gene-Expression-And-Regulation
+homepage: https://github.com/ontology-of-bacterial-gene-regulation/Ontology-Of-Bacterial-Gene-Expression-And-Regulation
 products:
   - id: obager.owl
   - id: obager.obo
 dependencies:
 
-tracker: https://github.com/ontology-of-bacterial-gene-expression-and-regulation/Ontology-Of-Bacterial-Gene-Expression-And-Regulation
+tracker: https://github.com/ontology-of-bacterial-gene-regulation/Ontology-Of-Bacterial-Gene-Expression-And-Regulation
 license:
   url: http://creativecommons.org/licenses/by/3.0/
   label: CC-BY
