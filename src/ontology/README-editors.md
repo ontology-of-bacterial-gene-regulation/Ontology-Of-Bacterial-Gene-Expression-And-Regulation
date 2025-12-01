@@ -24,7 +24,7 @@ The editors version is [obager-edit.owl](obager-edit.owl)
 
 [../../obager.owl](../../obager.owl) is the release version
 
-To edit, open the file in Protege. First make sure you have the repository cloned, see [the GitHub project](https://github.com/ontology-of-bacterial-gene-regulation/Ontology-Of-Bacterial-Gene-Regulation) for details.
+To edit, open the file in Protege. First make sure you have the repository cloned, see [the GitHub project](https://github.com/ontology-of-bacterial-gene-expression-and-regulation/Ontology-Of-Bacterial-Gene-Expression-And-Regulation) for details.
 
 ## ID Ranges
 
@@ -131,8 +131,8 @@ Finally type
 
 IMMEDIATELY AFTERWARDS (do *not* make further modifications) go here:
 
- * https://github.com/ontology-of-bacterial-gene-regulation/Ontology-Of-Bacterial-Gene-Regulation/releases
- * https://github.com/ontology-of-bacterial-gene-regulation/Ontology-Of-Bacterial-Gene-Regulation/releases/new
+ * https://github.com/ontology-of-bacterial-gene-expression-and-regulation/Ontology-Of-Bacterial-Gene-Expression-And-Regulation/releases
+ * https://github.com/ontology-of-bacterial-gene-expression-and-regulation/Ontology-Of-Bacterial-Gene-Expression-And-Regulation/releases/new
 
 The value of the "Tag version" field MUST be
 
@@ -159,13 +159,13 @@ For questions on this contact Chris Mungall or email obo-admin AT obofoundry.org
 
 # Travis Continuous Integration System
 
-Check the build status here: [![Build Status](https://travis-ci.org/ontology-of-bacterial-gene-regulation/Ontology-Of-Bacterial-Gene-Regulation.svg?branch=master)](https://travis-ci.org/ontology-of-bacterial-gene-regulation/Ontology-Of-Bacterial-Gene-Regulation)
+Check the build status here: [![Build Status](https://travis-ci.org/ontology-of-bacterial-gene-expression-and-regulation/Ontology-Of-Bacterial-Gene-Expression-And-Regulation.svg?branch=master)](https://travis-ci.org/ontology-of-bacterial-gene-expression-and-regulation/Ontology-Of-Bacterial-Gene-Expression-And-Regulation)
 
 Note: if you have only just created this project you will need to authorize travis for this repo.
 
- 1. Go to [https://travis-ci.org/profile/ontology-of-bacterial-gene-regulation](https://travis-ci.org/profile/ontology-of-bacterial-gene-regulation)
+ 1. Go to [https://travis-ci.org/profile/ontology-of-bacterial-gene-expression-and-regulation](https://travis-ci.org/profile/ontology-of-bacterial-gene-expression-and-regulation)
  2. click the "Sync account" button
- 3. Click the tick symbol next to ontology-of-bacterial-gene-regulation
+ 3. Click the tick symbol next to ontology-of-bacterial-gene-expression-and-regulation
 
 Travis builds should now be activated
 

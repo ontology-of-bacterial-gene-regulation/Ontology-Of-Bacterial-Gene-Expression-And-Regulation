@@ -1,26 +1,26 @@
 ---
 layout: ontology_detail
 id: obager
-title: Ontology of Bacterial Gene Regulation
+title: Ontology of Bacterial Gene Expression and Regulation
 jobs:
-  - id: https://travis-ci.org/ontology-of-bacterial-gene-regulation/Ontology-Of-Bacterial-Gene-Regulation
+  - id: https://travis-ci.org/ontology-of-bacterial-gene-expression-and-regulation/Ontology-Of-Bacterial-Gene-Expression-And-Regulation
     type: travis-ci
 build:
-  checkout: git clone https://github.com/ontology-of-bacterial-gene-regulation/Ontology-Of-Bacterial-Gene-Regulation.git
+  checkout: git clone https://github.com/ontology-of-bacterial-gene-expression-and-regulation/Ontology-Of-Bacterial-Gene-Expression-And-Regulation.git
   system: git
   path: "."
 contact:
   email: citlalli.mejiaalmonte@gmail.com
   label: Citlalli Mejía Almonte
-description: Ontology of Bacterial Gene Regulation is an ontology...
+description: Ontology of Bacterial Gene Expression and Regulation is an ontology...
 domain: stuff
-homepage: https://github.com/ontology-of-bacterial-gene-regulation/Ontology-Of-Bacterial-Gene-Regulation
+homepage: https://github.com/ontology-of-bacterial-gene-expression-and-regulation/Ontology-Of-Bacterial-Gene-Expression-And-Regulation
 products:
   - id: obager.owl
   - id: obager.obo
 dependencies:
 
-tracker: https://github.com/ontology-of-bacterial-gene-regulation/Ontology-Of-Bacterial-Gene-Regulation
+tracker: https://github.com/ontology-of-bacterial-gene-expression-and-regulation/Ontology-Of-Bacterial-Gene-Expression-And-Regulation
 license:
   url: http://creativecommons.org/licenses/by/3.0/
   label: CC-BY
@@ -28,6 +28,6 @@ license:
 
 Enter a detailed description of your ontology here
 
-The Ontology of Bacterial Gene Regulation (OBAGER) is an ontology developed to formally represent the concepts and relationships underlying bacterial gene regulation. It translates expert-reviewed definitions of promoters, transcription units, transcription factors, and related entities into formal OWL axioms, enabling logical consistency and future integration with FAIR data initiatives.
+The Ontology of Bacterial Gene Expression and Regulation (OBAGER) is an ontology developed to formally represent the concepts and relationships underlying bacterial gene regulation. It translates expert-reviewed definitions of promoters, transcription units, transcription factors, and related entities into formal OWL axioms, enabling logical consistency and future integration with FAIR data initiatives.
 
 Unlike instance-based models, OBAGER focuses on TBox-level definitions: necessary and sufficient conditions are defined at the class level to capture our best current understanding of regulatory biology. These definitions are provisional but expert-informed, designed to be transparent and extensible as new biological evidence emerges.
