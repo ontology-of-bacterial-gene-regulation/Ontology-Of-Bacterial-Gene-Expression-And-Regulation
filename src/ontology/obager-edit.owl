@@ -871,6 +871,59 @@ We also have the outstanding issue of how to aim different definitions to differ
     
 
 
+    <!-- http://purl.obolibrary.org/obo/PROK_0000001 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/PROK_0000001">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000092"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000061"/>
+        <obo:IAO_0000115>X enables expression of Y if and only if Y is an expressed segment and X is a material object whose presence is required for Y to be transcribed or translated in canonical gene expression contexts.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">enables expression of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PROK_0000002 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/PROK_0000002">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/PROK_0000001"/>
+        <obo:IAO_0000115>X enables expression of Y if and only if Y is an expressed segment and X is a material object whose presence is required for Y to be transcribed in canonical gene expression contexts.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">enables transcription of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PROK_0000003 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/PROK_0000003">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/PROK_0000001"/>
+        <obo:IAO_0000115>X enables expression of Y if and only if Y is an expressed segment and X is a material object whose presence is required for Y to be translated in canonical gene expression contexts.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">enables translation of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PROK_0000004 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/PROK_0000004">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/PROK_0000001"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000092"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000002"/>
+        <obo:IAO_0000115>X directs initiation of transcription of Y if and only if X is a molecular entity and Y is a transcription unit, and the presence of X is required for transcription of Y to initiate at a specific genomic location under canonical biological conditions.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">directs initiation of transcription of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PROK_0000005 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/PROK_0000005">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/PROK_0000001"/>
+        <obo:IAO_0000115>X selects site Y if and only if X is a molecular entity and Y is an expression site, and the presence of X is required for Y to be selected as a functionally relevant position for the initiation or termination of transcription or translation under canonical gene expression conditions.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">selects site</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/RO_0002434 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002434">

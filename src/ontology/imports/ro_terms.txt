@@ -1,1 +1,2 @@
 http://purl.obolibrary.org/obo/RO_0002436 #molecularly interacts with
+http://purl.obolibrary.org/obo/RO_0002330 #genetically related to, need all the subclasses
