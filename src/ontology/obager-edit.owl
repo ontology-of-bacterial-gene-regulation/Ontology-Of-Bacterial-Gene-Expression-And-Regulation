@@ -924,6 +924,16 @@ We also have the outstanding issue of how to aim different definitions to differ
     
 
 
+    <!-- http://purl.obolibrary.org/obo/PROK_0000006 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/PROK_0000006">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/PROK_0000001"/>
+        <obo:IAO_0000115>X directs initiation of translation of Y if and only if X is a molecular entity and Y is a conding sequence, and the presence of X is required for translation of Y to initiate at a specific genomic location under canonical biological conditions.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">directs initiation of translation of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/RO_0002434 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002434">
@@ -1203,11 +1213,11 @@ We also have the outstanding issue of how to aim different definitions to differ
                         </owl:unionOf>
                     </owl:Class>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000030"/>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PROK_0000002"/>
                         <owl:someValuesFrom>
                             <owl:Class>
                                 <owl:intersectionOf rdf:parseType="Collection">
-                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000031"/>
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000185"/>
                                     <owl:Restriction>
                                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000175"/>
                                         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
@@ -1218,11 +1228,11 @@ We also have the outstanding issue of how to aim different definitions to differ
                         </owl:someValuesFrom>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000030"/>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PROK_0000002"/>
                         <owl:allValuesFrom>
                             <owl:Class>
                                 <owl:intersectionOf rdf:parseType="Collection">
-                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000031"/>
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000185"/>
                                     <owl:Restriction>
                                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000175"/>
                                         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
@@ -1249,7 +1259,7 @@ We also have the outstanding issue of how to aim different definitions to differ
                         </owl:unionOf>
                     </owl:Class>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000124"/>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PROK_0000004"/>
                         <owl:someValuesFrom>
                             <owl:Class>
                                 <owl:intersectionOf rdf:parseType="Collection">
@@ -1264,7 +1274,7 @@ We also have the outstanding issue of how to aim different definitions to differ
                         </owl:someValuesFrom>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000124"/>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PROK_0000004"/>
                         <owl:allValuesFrom>
                             <owl:Class>
                                 <owl:intersectionOf rdf:parseType="Collection">
@@ -1295,11 +1305,11 @@ We also have the outstanding issue of how to aim different definitions to differ
                         </owl:unionOf>
                     </owl:Class>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000134"/>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PROK_0000005"/>
                         <owl:someValuesFrom>
                             <owl:Class>
                                 <owl:intersectionOf rdf:parseType="Collection">
-                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000185"/>
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000031"/>
                                     <owl:Restriction>
                                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000175"/>
                                         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
@@ -1310,11 +1320,11 @@ We also have the outstanding issue of how to aim different definitions to differ
                         </owl:someValuesFrom>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000134"/>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PROK_0000005"/>
                         <owl:allValuesFrom>
                             <owl:Class>
                                 <owl:intersectionOf rdf:parseType="Collection">
-                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000185"/>
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000031"/>
                                     <owl:Restriction>
                                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000175"/>
                                         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
@@ -1433,6 +1443,12 @@ We also have the outstanding issue of how to aim different definitions to differ
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000068"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000086"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PROK_0000002"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000002"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1824,7 +1840,7 @@ We also have the outstanding issue of how to aim different definitions to differ
                         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000104"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000171"/>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PROK_0000006"/>
                         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000196"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
@@ -2405,8 +2421,8 @@ We also have the outstanding issue of how to aim different definitions to differ
                         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000001"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000129"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000001"/>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PROK_0000002"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000185"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -2420,8 +2436,8 @@ We also have the outstanding issue of how to aim different definitions to differ
                         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000001"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000134"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000185"/>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PROK_0000004"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000002"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -3140,6 +3156,12 @@ COB_0000013</obo:IAO_0000119>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000068"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000107"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PROK_0000003"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000196"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
