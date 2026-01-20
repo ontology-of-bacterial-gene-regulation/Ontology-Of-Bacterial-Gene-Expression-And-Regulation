@@ -1,0 +1,2 @@
+http://purl.obolibrary.org/obo/RO_0002330 #genetically related to, need all the sub properties
+http://purl.obolibrary.org/obo/RO_0002514 #sequentially related to, need some sub properties
