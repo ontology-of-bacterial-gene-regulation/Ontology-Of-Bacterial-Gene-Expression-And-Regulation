@@ -762,11 +762,11 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     <!-- http://purl.obolibrary.org/obo/OBAGER_0000122 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000122">
-        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000135"/>
-        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000124"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a relationship that holds between a transcription unit and the promoter that begins its transcription</obo:IAO_0000115>
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/PROK_0000007"/>
+        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/PROK_0000004"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">the inverse of directs initiation of transcription of</obo:IAO_0000115>
         <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBAGER_0000122</owlr:python_name>
-        <rdfs:label xml:lang="en">has transcription initiated by</rdfs:label>
+        <rdfs:label xml:lang="en">has transcription directed by</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1043,6 +1043,14 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/PROK_0000001"/>
         <obo:IAO_0000115>X directs initiation of translation of Y if and only if X is a molecular entity and Y is a conding sequence, and the presence of X is required for translation of Y to initiate at a specific genomic location under canonical biological conditions.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">directs initiation of translation of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PROK_0000007 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/PROK_0000007">
+        <rdfs:label xml:lang="en">has expression enabled by</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1926,7 +1934,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000031">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000045"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">the first deoxyribonucleotide that serves as a template for RNA synthesis</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">transcription start site in the DNA</rdfs:label>
+        <rdfs:label xml:lang="en">transcription start site</rdfs:label>
     </owl:Class>
     
 
@@ -2304,7 +2312,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000062">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000045"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">the last deoxyribonucleotide that serves as a template for RNA synthesis</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">transcription termination site in the DNA</rdfs:label>
+        <rdfs:label xml:lang="en">transcription termination site</rdfs:label>
     </owl:Class>
     
 
@@ -3740,7 +3748,7 @@ COB_0000080</obo:IAO_0000119>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000183">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000049"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">the last ribonucleotide incorporated into the transcript before termination</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">transcription termination site in the RNA</rdfs:label>
+        <rdfs:label xml:lang="en">last templated base of RNA</rdfs:label>
     </owl:Class>
     
 
@@ -3750,7 +3758,7 @@ COB_0000080</obo:IAO_0000119>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000184">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000049"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">the first ribonucleotide in the RNA molecule resulting from transcription</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">transcription start site in the RNA</rdfs:label>
+        <rdfs:label xml:lang="en">first templated base of RNA</rdfs:label>
     </owl:Class>
     
 
