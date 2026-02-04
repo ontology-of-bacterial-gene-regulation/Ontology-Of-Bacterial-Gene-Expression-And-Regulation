@@ -999,7 +999,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/PROK_0000002">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/PROK_0000001"/>
-        <obo:IAO_0000115>X enables expression of Y if and only if Y is an expressed segment and X is a material object whose presence is required for Y to be transcribed in canonical gene expression contexts.</obo:IAO_0000115>
+        <obo:IAO_0000115>X enables transcription of Y if and only if Y is an expressed segment and X is a material object whose presence is required for Y to be transcribed in canonical gene expression contexts.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">enables transcription of</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1009,7 +1009,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/PROK_0000003">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/PROK_0000001"/>
-        <obo:IAO_0000115>X enables expression of Y if and only if Y is an expressed segment and X is a material object whose presence is required for Y to be translated in canonical gene expression contexts.</obo:IAO_0000115>
+        <obo:IAO_0000115>X enables transaltion of Y if and only if Y is an expressed segment and X is a material object whose presence is required for Y to be translated in canonical gene expression contexts.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">enables translation of</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1018,11 +1018,11 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     <!-- http://purl.obolibrary.org/obo/PROK_0000004 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/PROK_0000004">
-        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/PROK_0000001"/>
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/PROK_0000002"/>
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000092"/>
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000002"/>
         <obo:IAO_0000115>X directs initiation of transcription of Y if and only if X is a molecular entity and Y is a transcription unit, and the presence of X is required for transcription of Y to initiate at a specific genomic location under canonical biological conditions.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">directs initiation of transcription of</rdfs:label>
+        <rdfs:label xml:lang="en">locates initiation of transcription of</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1042,7 +1042,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/PROK_0000006">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/PROK_0000001"/>
         <obo:IAO_0000115>X directs initiation of translation of Y if and only if X is a molecular entity and Y is a conding sequence, and the presence of X is required for translation of Y to initiate at a specific genomic location under canonical biological conditions.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">directs initiation of translation of</rdfs:label>
+        <rdfs:label xml:lang="en">locates initiation of translation of</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1051,6 +1051,15 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/PROK_0000007">
         <rdfs:label xml:lang="en">has expression enabled by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PROK_0000008 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/PROK_0000008">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/PROK_0000003"/>
+        <rdfs:label xml:lang="en">locates initiation of translation of</rdfs:label>
     </owl:ObjectProperty>
     
 
