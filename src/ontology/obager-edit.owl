@@ -601,8 +601,9 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000053">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000134"/>
+        <obo:IAO_0000115>X negatively regulates expression of Y iff X regulates expression of Y and the regulation results in a decrease in the production level of a genetic product relative to a defined baseline condition.</obo:IAO_0000115>
         <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBAGER_0000053</owlr:python_name>
-        <rdfs:label xml:lang="en">negatively regulates</rdfs:label>
+        <rdfs:label xml:lang="en">negatively regulates expression of</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -611,8 +612,9 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000054">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000134"/>
+        <obo:IAO_0000115>X positively regulates expression of Y iff X regulates expression Y and the regulation results in an increase in the production level of genetic product relative to a defined baseline condition.</obo:IAO_0000115>
         <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBAGER_0000054</owlr:python_name>
-        <rdfs:label xml:lang="en">positively regulates</rdfs:label>
+        <rdfs:label xml:lang="en">positively regulates expression of</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -751,21 +753,6 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     
 
 
-    <!-- http://purl.obolibrary.org/obo/OBAGER_0000124 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000124">
-        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000134"/>
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000001"/>
-        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000002"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a relationshipt that holds between a promoter and the transcription unit whose transcription it initiates</obo:IAO_0000115>
-        <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBAGER_0000124</owlr:python_name>
-        <rdfs:comment>TO DO: change label to &quot;locates initiation of transcription of&quot; and it is not a regulatory property.</rdfs:comment>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This is a regulatory property since promoter, by definition is the site for the union for the RNAP holoenzyme and it is recognized by a sigma factor, which means that sigma factor selects where to start transcription in a specific manner.</rdfs:comment>
-        <rdfs:label xml:lang="en">specifically inititates transcription of</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/OBAGER_0000125 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000125">
@@ -807,6 +794,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000134">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000038"/>
         <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000135"/>
+        <obo:IAO_0000115>X regulates expression of Y iff X functionally regulates Y and the modulation concerns the level of production of a genetic product derived from Y</obo:IAO_0000115>
         <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBAGER_0000134</owlr:python_name>
         <rdfs:label xml:lang="en">regulates expression of</rdfs:label>
     </owl:ObjectProperty>
@@ -886,6 +874,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000171">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000134"/>
         <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000172"/>
+        <obo:IAO_0000115>X regulates translation of Y iff X regulates expression of Y and the modulation concerns the initiation or progression of translation of Y.</obo:IAO_0000115>
         <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBAGER_0000171</owlr:python_name>
         <rdfs:label xml:lang="en">regulates translation of</rdfs:label>
     </owl:ObjectProperty>
@@ -906,6 +895,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000173">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000134"/>
+        <obo:IAO_0000115>X regulates transcription of Y iff X regulates regulates expression of Y and the modulation concerns the initiation or progression of transcription of Y.</obo:IAO_0000115>
         <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBAGER_0000173</owlr:python_name>
         <rdfs:label xml:lang="en">regulates transcription of</rdfs:label>
     </owl:ObjectProperty>
