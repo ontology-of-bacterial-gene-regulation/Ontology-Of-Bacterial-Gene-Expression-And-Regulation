@@ -522,35 +522,12 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     
 
 
-    <!-- http://purl.obolibrary.org/obo/OBAGER_0000030 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000030">
-        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000134"/>
-        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000037"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a relationshipt that hold between a promoter and the transcription start sites that it produces</obo:IAO_0000115>
-        <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBAGER_0000030</owlr:python_name>
-        <rdfs:label xml:lang="en">selects TSS</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBAGER_0000037 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000037">
-        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000135"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a relationship that holds between a transcription termination site and the terminator that produces it</obo:IAO_0000115>
-        <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBAGER_0000037</owlr:python_name>
-        <rdfs:label xml:lang="en">TSS selected by</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/OBAGER_0000038 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000038">
         <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000066"/>
         <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBAGER_0000038</owlr:python_name>
-        <rdfs:label xml:lang="en">regulates</rdfs:label>
+        <rdfs:label xml:lang="en">functionally regulates</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -748,17 +725,6 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     
 
 
-    <!-- http://purl.obolibrary.org/obo/OBAGER_0000121 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000121">
-        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000134"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a relationship that holds between a terminator and the transcription termination sites that it produces</obo:IAO_0000115>
-        <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBAGER_0000121</owlr:python_name>
-        <rdfs:label xml:lang="en">selects TTS</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/OBAGER_0000122 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000122">
@@ -774,7 +740,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     <!-- http://purl.obolibrary.org/obo/OBAGER_0000123 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000123">
-        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000135"/>
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/PROK_0000007"/>
         <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000125"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a relationship that holds between a transcription unit and the terminator that ends its transcription</obo:IAO_0000115>
         <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBAGER_0000123</owlr:python_name>
@@ -801,22 +767,11 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     <!-- http://purl.obolibrary.org/obo/OBAGER_0000125 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000125">
-        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000134"/>
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/PROK_0000002"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a relationshipt that holds between a terminator and the transcription unit whose transcription it ends</obo:IAO_0000115>
         <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBAGER_0000125</owlr:python_name>
         <rdfs:comment>TO DO: change label to &quot;locates initiation of transcription of&quot; and it is not a subproperty of regulates.</rdfs:comment>
         <rdfs:label xml:lang="en">terminates transcription of</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBAGER_0000126 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000126">
-        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000135"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a relationship that holds between a transcription termination site and the terminator that produces it</obo:IAO_0000115>
-        <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBAGER_0000126</owlr:python_name>
-        <rdfs:label xml:lang="en">TTS selected by</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -826,7 +781,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000129">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000038"/>
         <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000132"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a relation that holds between a regulator entity and a biomacromolecular entity, in which the regulator changes the functional state of the biomacromolecular entity</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">X specifically regulates activity of Y if and only if X is a continuant and Y is a biomacromolecular entity, and X directly changes the functional state of the biomacromolecular entity; the interaction of X and Y is realized through spcific sites.</obo:IAO_0000115>
         <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBAGER_0000129</owlr:python_name>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">We use this property to describe the relation between all promoter regulators and the promoter, and the relation between effectors and its targets. Since the targets of effectors can be enzymes, we did not make this property a subproperty of “regulates expression of”.</rdfs:comment>
         <rdfs:label xml:lang="en">regulates activity of</rdfs:label>
@@ -1021,7 +976,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/PROK_0000002"/>
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000092"/>
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000002"/>
-        <obo:IAO_0000115>X directs initiation of transcription of Y if and only if X is a molecular entity and Y is a transcription unit, and the presence of X is required for transcription of Y to initiate at a specific genomic location under canonical biological conditions.</obo:IAO_0000115>
+        <obo:IAO_0000115>X locates initiation of transcription of Y if and only if X is a molecular entity and Y is a transcription unit, and the presence of X is required for transcription of Y to initiate at a specific genomic location under canonical biological conditions.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">locates initiation of transcription of</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1040,8 +995,8 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     <!-- http://purl.obolibrary.org/obo/PROK_0000006 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/PROK_0000006">
-        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/PROK_0000001"/>
-        <obo:IAO_0000115>X directs initiation of translation of Y if and only if X is a molecular entity and Y is a conding sequence, and the presence of X is required for translation of Y to initiate at a specific genomic location under canonical biological conditions.</obo:IAO_0000115>
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/PROK_0000003"/>
+        <obo:IAO_0000115>X locates initiation of translation of Y if and only if X is a molecular entity and Y is a conding sequence, and the presence of X is required for translation of Y to initiate at a specific genomic location under canonical biological conditions.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">locates initiation of translation of</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1051,15 +1006,6 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/PROK_0000007">
         <rdfs:label xml:lang="en">has expression enabled by</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/PROK_0000008 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/PROK_0000008">
-        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/PROK_0000003"/>
-        <rdfs:label xml:lang="en">locates initiation of translation of</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -2265,8 +2211,8 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a genomically carried regulator that is a nucleotide segment that acts on a genomic segment adjacent to its own locus, and modulates the rate, timing, or location of transcription or translation initiation.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">regulatory nucleotide segment</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a genomically carried regulator that is a nucleotide segment that regulates the expression of a locus in the same molecule.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">cis-acting regulator</rdfs:label>
     </owl:Class>
     
 
@@ -2520,7 +2466,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000092"/>
             </owl:Restriction>
         </owl:equivalentClass>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">an entity that increases or decreases the expression of a specific set of genes</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">an entity that increases or decreases the activity of a molecule or the expression of a specific set of genes</obo:IAO_0000115>
         <rdfs:label xml:lang="en">regulator</rdfs:label>
     </owl:Class>
     
@@ -2555,7 +2501,18 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     <!-- http://purl.obolibrary.org/obo/OBAGER_0000079 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000079">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000077"/>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000077"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000093"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000038"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000176"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a regulator that is a molecular entity not carried in the genome</rdfs:comment>
         <rdfs:label xml:lang="en">small molecular regulator</rdfs:label>
     </owl:Class>
@@ -2573,9 +2530,9 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a genomically carried regulator that is a molecule that is the product of trascription or translation, or that is formed by more than one gene products</obo:IAO_0000115>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Although the classification under this class are defined by the precise points of regulation, evidence for the regulatory activity might be the observation of the increase or decrease of the gene product, therefore, the regulated entity in the formal definition is not limited to the specific one for the gene expression phase, but it is generalized to a nucleotide sequence. For example, in the case of TF, the direct regulated entity is the promoter, but, in RegulonDB can be found these kind of regulators that are not associated to a promoter, but to a regulated transcription unit or gene.</rdfs:comment>
-        <rdfs:label xml:lang="en">regulatory gene product</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a genomically specified regulator that is a molecule that is the product of trascription or translation, or that is formed by more than one gene products</obo:IAO_0000115>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Although the classification under this class is defined by the precise points of regulation, evidence for the regulatory activity might be the observation of the increase or decrease of the gene product, therefore, the regulated entity in the formal definition is not limited to the specific one for the gene expression phase, but it is generalized to a nucleotide sequence. For example, in the case of TF, the direct regulated entity is the promoter, but, in RegulonDB can be found these kind of regulators that are not associated to a promoter, but to a regulated transcription unit or gene.</rdfs:comment>
+        <rdfs:label xml:lang="en">trans-acting regulator</rdfs:label>
     </owl:Class>
     
 
@@ -3109,7 +3066,7 @@ COB_0000013</obo:IAO_0000119>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000077"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A regulon is a set of gene products whose corresponding genes may be scattered throughout the genome, and whose expression is co-regulated by the same trans-acting factor or regulatory complex. This regulation occurs through a unitary mechanistic process involving specificity, either via direct binding of the regulator to a nucleotide segment or through direct modulation of the binding affinity of RNA polymerase or the ribosome to such segments.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A regulon is a set of genes that may be scattered throughout the genome, and whose expression is co-regulated by the same diffusible regulatory factor (trans-acting regulator or small molecular regulator). This regulation occurs through a unitary mechanistic process involving specificity, either via direct binding of the regulator to a nucleotide segment or through direct modulation of the binding affinity of RNA polymerase or the ribosome to such segments.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">regulon</rdfs:label>
     </owl:Class>
     
@@ -3121,14 +3078,14 @@ COB_0000013</obo:IAO_0000119>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000152"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000121"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000062"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000125"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000002"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000125"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000002"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PROK_0000005"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000062"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">an heterotypic discontinuos nucleotide segment near the end of the transcription unit (or transcript) that determines the location of transcript termination, although this might not be a single site</obo:IAO_0000115>
@@ -3177,6 +3134,7 @@ COB_0000013</obo:IAO_0000119>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000077"/>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a continuant that produces a change in a molecular entity and modifies its activity and/or specificity</obo:IAO_0000119>
         <rdfs:label xml:lang="en">effector</rdfs:label>
     </owl:Class>
