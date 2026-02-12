@@ -526,7 +526,9 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000038">
         <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000066"/>
+        <obo:IAO_0000115>X functionally regulates Y iff X is a material entity or a physico-chemical property, and Y is a biomacromolecular entity, and X participates in a biological mechanism that is part of a signal–effector response circuit, and this mechanism brings about a specific modulation of either (i) a functional state of Y or (ii) the level of expression of Y.</obo:IAO_0000115>
         <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBAGER_0000038</owlr:python_name>
+        <rdfs:comment>This relation differs from RO:regulates in that it holds between continuants rather than biological processes</rdfs:comment>
         <rdfs:label xml:lang="en">functionally regulates</rdfs:label>
     </owl:ObjectProperty>
     
@@ -781,7 +783,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000129">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000038"/>
         <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000132"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">X specifically regulates activity of Y if and only if X is a continuant and Y is a biomacromolecular entity, and X directly changes the functional state of the biomacromolecular entity; the interaction of X and Y is realized through spcific sites.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">X specifically regulates activity of Y if and only if X is a material entity or a physico-chemical property and Y is a biomacromolecular entity, and X directly changes the functional state of the biomacromolecular entity; the interaction of X and Y is realized through spcific sites.</obo:IAO_0000115>
         <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBAGER_0000129</owlr:python_name>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">We use this property to describe the relation between all promoter regulators and the promoter, and the relation between effectors and its targets. Since the targets of effectors can be enzymes, we did not make this property a subproperty of “regulates expression of”.</rdfs:comment>
         <rdfs:label xml:lang="en">regulates activity of</rdfs:label>
