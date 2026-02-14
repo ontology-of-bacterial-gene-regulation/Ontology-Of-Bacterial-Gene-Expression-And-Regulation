@@ -1632,25 +1632,27 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     <!-- http://purl.obolibrary.org/obo/OBAGER_0000008 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000008">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000075"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000068"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000086"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PROK_0000002"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000002"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000068"/>
-                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000075"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000075"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PROK_0000002"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000002"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000073"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000086"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000073"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/PROK_0000009"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">﻿A molecular complex composed of the core RNAP plus a σ factor, which is capable of initiating gene transcription at specific DNA positions.</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID: 32665585</obo:IAO_0000119>
         <rdfs:label xml:lang="en">RNA polymerase holoenzyme</rdfs:label>
@@ -2590,21 +2592,15 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000068"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000085"/>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000091"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000004"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000068"/>
-                        <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000075"/>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000134"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000050"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000091"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000004"/>
-            </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000084"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a regulatory protein of transcription initiation whose regulation specificity is determined by the DNA sequence that they recognize</obo:IAO_0000115>
@@ -2647,6 +2643,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/PROK_0000009"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a DNA-binding regulatory protein of transcription initiation that confer core RNAP promoter specificity, open duplex DNA and facilitate template strand entry into the RNAP active site</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:32665585</obo:IAO_0000119>
         <rdfs:label xml:lang="en">sigma factor</rdfs:label>
@@ -4008,6 +4005,41 @@ COB_0000080</obo:IAO_0000119>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">DNA discontinuos segment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PROK_0000008 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROK_0000008">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000176"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PROK_0000001"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000050"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment>a molecular entity that is required for the transcription or translation of a genetic element.</rdfs:comment>
+        <rdfs:label xml:lang="en">expression machinery component</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PROK_0000009 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROK_0000009">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000075"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PROK_0000001"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000002"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">core RNA polymerase</rdfs:label>
     </owl:Class>
     
 
