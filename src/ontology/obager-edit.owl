@@ -1532,9 +1532,8 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000045"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A DNA segment essential for the initiation of transcription at a defined location in a DNA molecule, although this location might not be one single base, it is recognized by a specific Eσ, and this recognition is not necessarily autonomous. A promoter guides transcription initiation in only one direction, with directionality determined by the strand on which its associated transcription start site resides.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A DNA segment essential for the initiation of transcription at a defined location in a DNA molecule, although this location might not be one single base, and it is recognized by a specific Eσ. A promoter guides transcription initiation in only one direction, with directionality determined by the strand on which its associated transcription start site resides.</obo:IAO_0000115>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Promoter coordinates are calculated based on the most upstream TSS. The left coordinate is 60 bases upstream and the right coordinate is 20 bases downstream the TSS.</rdfs:comment>
-        <rdfs:comment>TO DO: eliminate the &quot;regulates expression of some gene&quot; axiom. Do it after confirming with Steve that promoter, terminator and TU are the primary objects subject to regulation, and that they are not regulators.</rdfs:comment>
         <rdfs:label xml:lang="en">promoter</rdfs:label>
     </owl:Class>
     
@@ -1699,27 +1698,6 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000035"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A gene that carries the information of a functional RNA.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">RNA gene</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBAGER_0000014 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000014">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000001"/>
-        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000015"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A promoter that requires additional elements to initiate transcription; for example, activators that compensate the absence of motifs in the promoter sequences.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">non-autonomous promoter</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBAGER_0000015 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000015">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000001"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A promoter that is able to initiate transcription without additional elements.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">autonomous promoter</rdfs:label>
     </owl:Class>
     
 
@@ -2646,6 +2624,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/PROK_0000009"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a DNA-binding regulatory protein of transcription initiation that confer core RNAP promoter specificity, open duplex DNA and facilitate template strand entry into the RNAP active site</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:32665585</obo:IAO_0000119>
+        <rdfs:comment>se clasifica como subclase de RNA polymerase holoenzyme!!!!</rdfs:comment>
         <rdfs:label xml:lang="en">sigma factor</rdfs:label>
     </owl:Class>
     
@@ -3704,7 +3683,7 @@ COB_0000080</obo:IAO_0000119>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000183">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000049"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">the last ribonucleotide incorporated into the transcript before termination</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">last templated base of RNA</rdfs:label>
+        <rdfs:label xml:lang="en">last templated base in RNA</rdfs:label>
     </owl:Class>
     
 
@@ -3714,7 +3693,7 @@ COB_0000080</obo:IAO_0000119>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000184">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000049"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">the first ribonucleotide in the RNA molecule resulting from transcription</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">first templated base of RNA</rdfs:label>
+        <rdfs:label xml:lang="en">first templated base in RNA</rdfs:label>
     </owl:Class>
     
 
