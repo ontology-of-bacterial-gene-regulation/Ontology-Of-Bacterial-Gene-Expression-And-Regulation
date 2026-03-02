@@ -736,7 +736,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/PROK_0000004"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">the inverse of directs initiation of transcription of</obo:IAO_0000115>
         <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBAGER_0000122</owlr:python_name>
-        <rdfs:label xml:lang="en">has transcription directed by</rdfs:label>
+        <rdfs:label xml:lang="en">has transcription initiation located by</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -2179,11 +2179,11 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000050"/>
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000078"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000077"/>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a genomically carried regulator that is a nucleotide segment that regulates the expression of a locus in the same molecule.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a regulator that is a nucleotide segment that regulates the expression of a locus in the same molecule.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">cis-acting regulator</rdfs:label>
     </owl:Class>
     
@@ -2444,60 +2444,13 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     
 
 
-    <!-- http://purl.obolibrary.org/obo/OBAGER_0000078 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000078">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000050"/>
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000178"/>
-                        </owl:unionOf>
-                    </owl:Class>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000038"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000050"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000077"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A regulator that is a molecule or molecular segment whose structure or sequence is specified by information encoded in the genome, and that has a mechanism of activation or deactivation.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">genomically specified regulator</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBAGER_0000079 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000079">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000077"/>
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000093"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000038"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000176"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a regulator that is a molecular entity not carried in the genome</rdfs:comment>
-        <rdfs:label xml:lang="en">small molecular regulator</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/OBAGER_0000080 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000080">
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000078"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000077"/>
                     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000178"/>
                 </owl:intersectionOf>
             </owl:Class>
@@ -2509,29 +2462,12 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     
 
 
-    <!-- http://purl.obolibrary.org/obo/OBAGER_0000081 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000081">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000075"/>
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000080"/>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a regulatory gene product that is a protein</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">regulatory protein</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/OBAGER_0000082 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000082">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000205"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a regulatory protein that regulates the translation of a messenger RNA into a polypeptide chain</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">regulatory protein of translation</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a trans-acting regulator that modulates the translation of a messenger RNA into a polypeptide chain</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">trans-acting regulator of translation</rdfs:label>
     </owl:Class>
     
 
@@ -2539,9 +2475,9 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     <!-- http://purl.obolibrary.org/obo/OBAGER_0000083 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000083">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000081"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a regulatory protein that regulates the transcription of a DNA segment into an RNA molecule</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">regulatory protein of transcription</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000080"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a trans-acting regulator that modulates the transcription of a DNA segment into an RNA molecule</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">trans-acting transcriptional regulator</rdfs:label>
     </owl:Class>
     
 
@@ -2556,9 +2492,9 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000050"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a regulatory protein of transcription that regulates the recognition of the promoter by the RNA polymerase holoenzyme and the formation of the open complex</obo:IAO_0000115>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Although this definition states that the precise point of regulation is the initiation of transcription, evidence for the regulatory activity might be the observation of the increase or decrease of the gene product, therefore, the regulated entity in the formal definition is not limited to the promoter, but it is generalized to a nucleotide sequence.</rdfs:comment>
-        <rdfs:label xml:lang="en">regulatory protein of transcription initiation</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a trans-acting regulator of transcription that regulates the recognition of the promoter by the RNA polymerase holoenzyme and the formation of the open complex</obo:IAO_0000115>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Although this definition states that the precise point of regulation is the initiation of transcription, evidence for the regulatory activity might be the observation of the increase or decrease of the gene product, therefore, the regulated entity in the formal definition is not limited to the promoter, but it is generalized to a nucleotide segment.</rdfs:comment>
+        <rdfs:label xml:lang="en">trans-acting regulator of transcription initiation</rdfs:label>
     </owl:Class>
     
 
@@ -2574,16 +2510,16 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
                         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000004"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000134"/>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000173"/>
                         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000050"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000084"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a regulatory protein of transcription initiation whose regulation specificity is determined by the DNA sequence that they recognize</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a trans-acting regulator of transcription initiation whose regulation specificity is determined by the DNA sequence that they recognize</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:32665585</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">DNA-binding regulatory protein of transcription initiation</rdfs:label>
+        <rdfs:label xml:lang="en">DNA-binding regulator of transcription initiation</rdfs:label>
     </owl:Class>
     
 
@@ -2655,7 +2591,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a regulatory protein of transcription initiation that regulates transcription initiation by interacting with the RNA polymerase holoenzyme and whose specificity is not determined directly by the recognition of specific a DNA sequence</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:32665585</obo:IAO_0000119>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Using a negation in formal definitions requires the assertion of negative facts in the whole ontology, because the lack of a positive assertion does not imply the negative assertion (OWA). In this particular case, the definition implies that RNAP-centered regulatory protein is a disjoint class with DNA-binding regulatory protein of transcription initiation, i. e., RNAP-centered regulatory proteins do not regulate transcription initiation in any case by recognizing a DNA sequence.</rdfs:comment>
-        <rdfs:label xml:lang="en">RNAP-centered regulatory protein of transcription initiation</rdfs:label>
+        <rdfs:label xml:lang="en">RNAP-centered regulator of transcription initiation</rdfs:label>
     </owl:Class>
     
 
@@ -2664,9 +2600,9 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000088">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000083"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a regulatory protein of transcription that regulates the extension of the RNA molecule after promoter clearance</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a trans-acting regulator of transcription that regulates the extension of the RNA molecule after promoter clearance</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Adapted from GO:0006354</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">regulatory protein of transcription elongation</rdfs:label>
+        <rdfs:label xml:lang="en">trans-acting regulator of transcription elongation</rdfs:label>
     </owl:Class>
     
 
@@ -2676,25 +2612,8 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000089">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000083"/>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Adapted from GO:0006353</obo:IAO_0000119>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a regulatory protein of transcription initiation that regulates de dissociation of the RNA-DNA hybrid and the release of the RNA polymerase from its DNA template</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">regulatory protein of transcription termination</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBAGER_0000090 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000090">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000080"/>
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000098"/>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a trans acting regulatory element that is an RNA molecule</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">regulatory RNA molecule</rdfs:label>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a trans-acting regulator of transcription initiation that regulates de dissociation of the RNA-DNA hybrid and the release of the RNA polymerase from its DNA template</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">trans-acting regulator of transcription termination</rdfs:label>
     </owl:Class>
     
 
@@ -2755,7 +2674,7 @@ COB_0000013</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000095">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000049"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A continuos RNA segment that carries the information for the structure of at least one functional-RNA or polipeptide chain. If the gene carries the information for more than one product, it means that the gene is composed of overlapping CDSs or overlapping functional RNA bearer regions.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A continuos RNA segment that carries the information for the structure of at least one functional-RNA or polipeptide chain. If the gene carries the information for more than one product, it means that the gene is composed of overlapping CDSs or functional RNA bearer regions.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">transcribed region of a gene</rdfs:label>
     </owl:Class>
     
@@ -3034,7 +2953,7 @@ COB_0000013</obo:IAO_0000119>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000077"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A regulon is a set of genes that may be scattered throughout the genome, and whose expression is co-regulated by the same diffusible regulatory factor (trans-acting regulator or small molecular regulator). This regulation occurs through a unitary mechanistic process involving specificity, either via direct binding of the regulator to a nucleotide segment or through direct modulation of the binding affinity of RNA polymerase or the ribosome to such segments.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A regulon is a set of units of expression that may be scattered throughout the genome, and whose expression is co-regulated by the same diffusible regulatory factor (trans-acting regulator or small molecular regulator). This regulation occurs through a unitary mechanistic process involving specificity, either via direct binding of the regulator to a nucleotide segment or through direct modulation of the binding affinity of RNA polymerase or the ribosome to such segments.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">regulon</rdfs:label>
     </owl:Class>
     
@@ -3102,7 +3021,7 @@ COB_0000013</obo:IAO_0000119>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000077"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000080"/>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a continuant that produces a change in a molecular entity and modifies its activity and/or specificity</obo:IAO_0000119>
         <rdfs:label xml:lang="en">effector</rdfs:label>
     </owl:Class>
@@ -3741,7 +3660,7 @@ COB_0000080</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000188">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000176"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A material entity that consists of two or more molecular entities that are grouped together based on spatial, functional, or contextual association, without being covalently bonded or forming a single chemical structure.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A material entity that consists of two or more molecular entities that are grouped together based on spatial, functional, or contextual association, without being covalently bonded nor immediately adjacent in the genome nor forming a single chemical structure.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">aggregate of molecular entities</rdfs:label>
     </owl:Class>
     
@@ -3948,9 +3867,9 @@ COB_0000080</obo:IAO_0000119>
     <!-- http://purl.obolibrary.org/obo/OBAGER_0000205 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000205">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000081"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a regulatory protein that regulates gene expression after the transcription unit is transcribed into an mRNA molecule</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">post-transcriptional regulatory protein</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000080"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a trans-acting regulator that regulates gene expression after the transcription unit is transcribed into an mRNA molecule</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">trans-acting post-transcriptional regulator</rdfs:label>
     </owl:Class>
     
 
@@ -3959,8 +3878,8 @@ COB_0000080</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000206">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000205"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a regulatory protein that binds to an RNA molecule and, by doing so, increases or decreases its degradation rate, thereby modulating its half-life without directly affecting its transcription or translation</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">protein that regulates mRNA stability</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a trans-acting regulator that binds to an RNA molecule and, by doing so, increases or decreases its degradation rate, thereby modulating its half-life without directly affecting its transcription or translation</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">trans-acting regulator of mRNA stability</rdfs:label>
     </owl:Class>
     
 
@@ -4019,6 +3938,37 @@ COB_0000080</obo:IAO_0000119>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">core RNA polymerase</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PROK_0000010 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROK_0000010">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000060"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000173"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000050"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/PROK_0000011"/>
+        <obo:IAO_0000115>a cis-acting regulator that modulates the transcription of a DNA segment into an RNA molecule</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">cis-acting transcriptional regulator</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PROK_0000011 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROK_0000011">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000060"/>
+        <obo:IAO_0000115>a cis-acting regulator that regulates gene expression after the transcription unit is transcribed into an mRNA molecule</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">cis-acting postranscriptional regulator</rdfs:label>
     </owl:Class>
     
 
