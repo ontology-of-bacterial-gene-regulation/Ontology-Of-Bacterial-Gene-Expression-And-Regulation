@@ -1,18 +1,18 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://purl.obolibrary.org/obo/obager.owl#"
-     xml:base="http://purl.obolibrary.org/obo/obager.owl"
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/prok.owl#"
+     xml:base="http://purl.obolibrary.org/obo/prok.owl"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:cheb="http://purl.obolibrary.org/obo/chebi/"
      xmlns:cito="http://purl.org/spar/cito/"
+     xmlns:core="http://www.w3.org/2004/02/skos/core#"
+     xmlns:oboI="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:owlr="http://www.lesfleursdunormal.fr/static/_downloads/owlready_ontology.owl#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-     xmlns:chebi="http://purl.obolibrary.org/obo/chebi/"
-     xmlns:terms="http://purl.org/dc/terms/"
-     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
-     xmlns:owlready_ontology="http://www.lesfleursdunormal.fr/static/_downloads/owlready_ontology.owl#">
+     xmlns:term="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/obager.owl"/>
     
 
@@ -121,7 +121,7 @@ Personally, I am more comfortable weakening definition to documentation, with in
 We also have the outstanding issue of how to aim different definitions to different audiences. A clinical audience reading chebi wants a different sort of definition documentation/definition from a chemistry trained audience, and similarly there is a need for a definition that is adequate for an ontologist to work with.  </obo:IAO_0000116>
         <obo:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</obo:IAO_0000119>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DEFINITION</oboInOwl:hasExactSynonym>
+        <oboI:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DEFINITION</oboI:hasExactSynonym>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
         <rdfs:label xml:lang="en">definition</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">definition</rdfs:label>
@@ -284,7 +284,7 @@ Annotations: IAO_0000424 &quot;http://purl.obolibrary.org/obo/BFO_0000051 some (
     <!-- http://purl.obolibrary.org/obo/OBAGER_0000033 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000033">
-        <owlready_ontology:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBAGER_0000033</owlready_ontology:python_name>
+        <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBAGER_0000033</owlr:python_name>
         <rdfs:label xml:lang="en">synonym</rdfs:label>
     </owl:AnnotationProperty>
     
@@ -305,8 +305,8 @@ Annotations: IAO_0000424 &quot;http://purl.obolibrary.org/obo/BFO_0000051 some (
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/RO_0040042">
         <obo:IAO_0000112>part-of is homeomorphic for independent continuants.</obo:IAO_0000112>
         <obo:IAO_0000115>R is homemorphic for C iff (1) there exists some x,y such that x R y, and x and y instantiate C and (2) for all x, if x is an instance of C, and there exists some y some such that x R y, then it follows that y is an instance of C.</obo:IAO_0000115>
-        <oboInOwl:created_by rdf:resource="https://orcid.org/0000-0002-6601-2165"/>
-        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-10-21T19:46:34Z</oboInOwl:creation_date>
+        <oboI:created_by rdf:resource="https://orcid.org/0000-0002-6601-2165"/>
+        <oboI:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-10-21T19:46:34Z</oboI:creation_date>
         <rdfs:comment>R homeomorphic-for C expands to: C SubClassOf R only C. Additionally, for any class D that is disjoint with C, we can also expand to C DisjointWith R some D, D DisjointWith R some C.</rdfs:comment>
         <rdfs:label>is homeomorphic for</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://github.com/oborel/obo-relations/issues/164"/>
@@ -397,8 +397,8 @@ Annotations: IAO_0000424 &quot;http://purl.obolibrary.org/obo/BFO_0000051 some (
         <obo:IAO_0000115>An alternative label for a class or property which has the exact same meaning than the preferred name/primary label.</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:resource="http://orcid.org/0000-0001-5208-3432"/>
         <obo:IAO_0000233>https://github.com/information-artifact-ontology/ontology-metadata/issues/20</obo:IAO_0000233>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FULL_SYN</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Synonym with Source Data</oboInOwl:hasExactSynonym>
+        <oboI:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FULL_SYN</oboI:hasExactSynonym>
+        <oboI:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Synonym with Source Data</oboI:hasExactSynonym>
         <rdfs:label xml:lang="en">has exact synonym</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has exact synonym</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_exact_synonym</rdfs:label>
@@ -534,10 +534,10 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <obo:RO_0040042 rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
         <obo:RO_0040042 rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
         <obo:RO_0040042 rdf:resource="http://purl.obolibrary.org/obo/BFO_0000031"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_go_annotation_extension"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_go_gp2term"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_go_ontology"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_gocam"/>
+        <oboI:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_go_annotation_extension"/>
+        <oboI:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_go_gp2term"/>
+        <oboI:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_go_ontology"/>
+        <oboI:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_gocam"/>
         <rdfs:label xml:lang="en">part of</rdfs:label>
         <rdfs:seeAlso rdf:resource="http://ontologydesignpatterns.org/wiki/Community:Parts_and_Collections"/>
         <rdfs:seeAlso rdf:resource="http://ontologydesignpatterns.org/wiki/Submissions:PartOf"/>
@@ -563,9 +563,9 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
 A continuant cannot have an occurrent as part: use &apos;participates in&apos;. An occurrent cannot have a continuant as part: use &apos;has participant&apos;. An immaterial entity cannot have a material entity as part: use &apos;location of&apos;. An independent continuant cannot have a specifically dependent continuant as part: use &apos;bearer of&apos;. A specifically dependent continuant cannot have an independent continuant as part: use &apos;inheres in&apos;.</obo:IAO_0000116>
         <obo:IAO_0000118 xml:lang="en">has_part</obo:IAO_0000118>
         <obo:RO_0001900 rdf:resource="http://purl.obolibrary.org/obo/RO_0001901"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_go_annotation_extension"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_go_ontology"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_gocam"/>
+        <oboI:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_go_annotation_extension"/>
+        <oboI:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_go_ontology"/>
+        <oboI:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_gocam"/>
         <rdfs:label xml:lang="en">has part</rdfs:label>
     </owl:ObjectProperty>
     
@@ -578,7 +578,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000050"/>
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000092"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a relationship that holds between a nucleotide region and a molecule, whereby they bind in a sequence specific manner</obo:IAO_0000115>
-        <owlready_ontology:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBAGER_0000010</owlready_ontology:python_name>
+        <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBAGER_0000010</owlr:python_name>
         <rdfs:label xml:lang="en">is recognized by</rdfs:label>
     </owl:ObjectProperty>
     
@@ -589,7 +589,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000038">
         <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000066"/>
         <obo:IAO_0000115>X functionally regulates Y iff X is a material entity or a physico-chemical property, and Y is a biomacromolecular entity, and X participates in a biological mechanism that is part of a signal–effector response circuit, and this mechanism brings about a specific modulation of either (i) a functional state of Y or (ii) the level of expression of Y.</obo:IAO_0000115>
-        <owlready_ontology:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBAGER_0000038</owlready_ontology:python_name>
+        <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBAGER_0000038</owlr:python_name>
         <rdfs:comment>This relation differs from RO:regulates in that it holds between continuants rather than biological processes</rdfs:comment>
         <rdfs:label xml:lang="en">functionally regulates</rdfs:label>
     </owl:ObjectProperty>
@@ -601,7 +601,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000039">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000056"/>
         <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000046"/>
-        <owlready_ontology:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBAGER_0000039</owlready_ontology:python_name>
+        <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBAGER_0000039</owlr:python_name>
         <rdfs:label xml:lang="en">transcribes into</rdfs:label>
     </owl:ObjectProperty>
     
@@ -612,7 +612,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000040">
         <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000068"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
-        <owlready_ontology:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBAGER_0000040</owlready_ontology:python_name>
+        <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBAGER_0000040</owlr:python_name>
         <rdfs:label xml:lang="en">is part of</rdfs:label>
     </owl:ObjectProperty>
     
@@ -624,7 +624,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000056"/>
         <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000048"/>
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000055"/>
-        <owlready_ontology:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBAGER_0000041</owlready_ontology:python_name>
+        <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBAGER_0000041</owlr:python_name>
         <rdfs:label xml:lang="en">translates into</rdfs:label>
     </owl:ObjectProperty>
     
@@ -634,7 +634,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000046">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000059"/>
-        <owlready_ontology:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBAGER_0000046</owlready_ontology:python_name>
+        <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBAGER_0000046</owlr:python_name>
         <rdfs:label xml:lang="en">is transcribed from</rdfs:label>
     </owl:ObjectProperty>
     
@@ -644,7 +644,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000048">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000059"/>
-        <owlready_ontology:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBAGER_0000048</owlready_ontology:python_name>
+        <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBAGER_0000048</owlr:python_name>
         <rdfs:label xml:lang="en">is translated from</rdfs:label>
     </owl:ObjectProperty>
     
@@ -653,7 +653,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     <!-- http://purl.obolibrary.org/obo/OBAGER_0000052 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000052">
-        <owlready_ontology:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBAGER_0000052</owlready_ontology:python_name>
+        <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBAGER_0000052</owlr:python_name>
         <rdfs:label xml:lang="en">produces</rdfs:label>
     </owl:ObjectProperty>
     
@@ -664,7 +664,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000053">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000134"/>
         <obo:IAO_0000115>X negatively regulates expression of Y iff X regulates expression of Y and the regulation results in a decrease in the production level of a genetic product relative to a defined baseline condition.</obo:IAO_0000115>
-        <owlready_ontology:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBAGER_0000053</owlready_ontology:python_name>
+        <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBAGER_0000053</owlr:python_name>
         <rdfs:label xml:lang="en">negatively regulates expression of</rdfs:label>
     </owl:ObjectProperty>
     
@@ -675,7 +675,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000054">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000134"/>
         <obo:IAO_0000115>X positively regulates expression of Y iff X regulates expression Y and the regulation results in an increase in the production level of genetic product relative to a defined baseline condition.</obo:IAO_0000115>
-        <owlready_ontology:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBAGER_0000054</owlready_ontology:python_name>
+        <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBAGER_0000054</owlr:python_name>
         <rdfs:label xml:lang="en">positively regulates expression of</rdfs:label>
     </owl:ObjectProperty>
     
@@ -686,7 +686,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000056">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000059"/>
-        <owlready_ontology:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBAGER_0000056</owlready_ontology:python_name>
+        <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBAGER_0000056</owlr:python_name>
         <rdfs:label xml:lang="en">expressed into</rdfs:label>
     </owl:ObjectProperty>
     
@@ -696,7 +696,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000059">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <owlready_ontology:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBAGER_0000059</owlready_ontology:python_name>
+        <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBAGER_0000059</owlr:python_name>
         <rdfs:label xml:lang="en">is expressed from</rdfs:label>
     </owl:ObjectProperty>
     
@@ -705,7 +705,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     <!-- http://purl.obolibrary.org/obo/OBAGER_0000066 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000066">
-        <owlready_ontology:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBAGER_0000066</owlready_ontology:python_name>
+        <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBAGER_0000066</owlr:python_name>
         <rdfs:label xml:lang="en">is regulated by</rdfs:label>
     </owl:ObjectProperty>
     
@@ -715,7 +715,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000068">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
-        <owlready_ontology:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBAGER_0000068</owlready_ontology:python_name>
+        <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBAGER_0000068</owlr:python_name>
         <rdfs:label xml:lang="en">has part</rdfs:label>
     </owl:ObjectProperty>
     
@@ -726,7 +726,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000073">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000068"/>
         <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000180"/>
-        <owlready_ontology:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBAGER_0000073</owlready_ontology:python_name>
+        <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBAGER_0000073</owlr:python_name>
         <rdfs:label xml:lang="en">has direct part</rdfs:label>
     </owl:ObjectProperty>
     
@@ -738,7 +738,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000092"/>
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000050"/>
-        <owlready_ontology:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBAGER_0000091</owlready_ontology:python_name>
+        <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBAGER_0000091</owlr:python_name>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a relationship that holds between a molecule and a nucleotide region, whereby the first one binds the latter in a sequence specific manner</rdfs:comment>
         <rdfs:label xml:lang="en">recognizes sequence of</rdfs:label>
     </owl:ObjectProperty>
@@ -751,7 +751,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000132"/>
         <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000112"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a relation that holds between a biomacromolecuar entity and an entity (activator), which brings about a change necessary for the biomacromolecule to be functional</obo:IAO_0000115>
-        <owlready_ontology:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBAGER_0000111</owlready_ontology:python_name>
+        <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBAGER_0000111</owlr:python_name>
         <rdfs:label xml:lang="en">is activated by</rdfs:label>
     </owl:ObjectProperty>
     
@@ -762,7 +762,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000112">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000129"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a relation that holds between an entity (activator) and a biomacromolecular entity, in which the activator brings about a change necessary for the biomacromolecular entity to be functional</obo:IAO_0000115>
-        <owlready_ontology:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBAGER_0000112</owlready_ontology:python_name>
+        <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBAGER_0000112</owlr:python_name>
         <rdfs:label xml:lang="en">activates</rdfs:label>
     </owl:ObjectProperty>
     
@@ -774,7 +774,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000129"/>
         <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000114"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a relation that holds between an entity (deactivator) and a biomacromolecular entity, in which the deactivator brings about a change necessary for the biomacromolecular entity to stop being functional</obo:IAO_0000115>
-        <owlready_ontology:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBAGER_0000113</owlready_ontology:python_name>
+        <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBAGER_0000113</owlr:python_name>
         <rdfs:label xml:lang="en">deactivates</rdfs:label>
     </owl:ObjectProperty>
     
@@ -785,7 +785,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000114">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000132"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a relation that holds between a biomacromolecuar entity and an entity (deactivator), which brings about a change necessary for the biomacromolecule to stop being functional</obo:IAO_0000115>
-        <owlready_ontology:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBAGER_0000114</owlready_ontology:python_name>
+        <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBAGER_0000114</owlr:python_name>
         <rdfs:label xml:lang="en">is deactivated by</rdfs:label>
     </owl:ObjectProperty>
     
@@ -797,7 +797,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/PROK_0000007"/>
         <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/PROK_0000004"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">the inverse of directs initiation of transcription of</obo:IAO_0000115>
-        <owlready_ontology:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBAGER_0000122</owlready_ontology:python_name>
+        <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBAGER_0000122</owlr:python_name>
         <rdfs:label xml:lang="en">has transcription initiation located by</rdfs:label>
     </owl:ObjectProperty>
     
@@ -809,7 +809,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/PROK_0000007"/>
         <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000125"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a relationship that holds between a transcription unit and the terminator that ends its transcription</obo:IAO_0000115>
-        <owlready_ontology:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBAGER_0000123</owlready_ontology:python_name>
+        <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBAGER_0000123</owlr:python_name>
         <rdfs:label xml:lang="en">has transcription terminated by</rdfs:label>
     </owl:ObjectProperty>
     
@@ -820,7 +820,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000125">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/PROK_0000002"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a relationshipt that holds between a terminator and the transcription unit whose transcription it ends</obo:IAO_0000115>
-        <owlready_ontology:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBAGER_0000125</owlready_ontology:python_name>
+        <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBAGER_0000125</owlr:python_name>
         <rdfs:comment>TO DO: change label to &quot;locates initiation of transcription of&quot; and it is not a subproperty of regulates.</rdfs:comment>
         <rdfs:label xml:lang="en">terminates transcription of</rdfs:label>
     </owl:ObjectProperty>
@@ -833,7 +833,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000038"/>
         <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000132"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">X specifically regulates activity of Y if and only if X is a material entity or a physico-chemical property and Y is a biomacromolecular entity, and X directly changes the functional state of the biomacromolecular entity; the interaction of X and Y is realized through spcific sites.</obo:IAO_0000115>
-        <owlready_ontology:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBAGER_0000129</owlready_ontology:python_name>
+        <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBAGER_0000129</owlr:python_name>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">We use this property to describe the relation between all promoter regulators and the promoter, and the relation between effectors and its targets. Since the targets of effectors can be enzymes, we did not make this property a subproperty of “regulates expression of”.</rdfs:comment>
         <rdfs:label xml:lang="en">regulates activity of</rdfs:label>
     </owl:ObjectProperty>
@@ -845,7 +845,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000132">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000066"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a relation that holds between a biomacromolecuar entity and a regulator entity, which changes the functional state of the biomacromolecule</obo:IAO_0000115>
-        <owlready_ontology:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBAGER_0000132</owlready_ontology:python_name>
+        <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBAGER_0000132</owlr:python_name>
         <rdfs:label xml:lang="en">has activity regulated by</rdfs:label>
     </owl:ObjectProperty>
     
@@ -857,7 +857,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000038"/>
         <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000135"/>
         <obo:IAO_0000115>X regulates expression of Y iff X functionally regulates Y and the modulation concerns the level of production of a genetic product derived from Y</obo:IAO_0000115>
-        <owlready_ontology:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBAGER_0000134</owlready_ontology:python_name>
+        <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBAGER_0000134</owlr:python_name>
         <rdfs:label xml:lang="en">regulates expression of</rdfs:label>
     </owl:ObjectProperty>
     
@@ -867,7 +867,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000135">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000066"/>
-        <owlready_ontology:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBAGER_0000135</owlready_ontology:python_name>
+        <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBAGER_0000135</owlr:python_name>
         <rdfs:label xml:lang="en">has expression regulated by</rdfs:label>
     </owl:ObjectProperty>
     
@@ -878,7 +878,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000136">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000068"/>
         <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000156"/>
-        <owlready_ontology:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBAGER_0000136</owlready_ontology:python_name>
+        <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBAGER_0000136</owlr:python_name>
         <rdfs:label xml:lang="en">has member</rdfs:label>
     </owl:ObjectProperty>
     
@@ -887,7 +887,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     <!-- http://purl.obolibrary.org/obo/OBAGER_0000150 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000150">
-        <owlready_ontology:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBAGER_0000150</owlready_ontology:python_name>
+        <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBAGER_0000150</owlr:python_name>
         <rdfs:label xml:lang="en">has interaction type</rdfs:label>
     </owl:ObjectProperty>
     
@@ -897,7 +897,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000151">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000175"/>
-        <owlready_ontology:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBAGER_0000151</owlready_ontology:python_name>
+        <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBAGER_0000151</owlr:python_name>
         <rdfs:label xml:lang="en">is interaction type of</rdfs:label>
     </owl:ObjectProperty>
     
@@ -907,7 +907,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000156">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000040"/>
-        <owlready_ontology:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBAGER_0000156</owlready_ontology:python_name>
+        <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBAGER_0000156</owlr:python_name>
         <rdfs:label xml:lang="en">is member of</rdfs:label>
     </owl:ObjectProperty>
     
@@ -916,7 +916,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     <!-- http://purl.obolibrary.org/obo/OBAGER_0000159 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000159">
-        <owlready_ontology:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBAGER_0000159</owlready_ontology:python_name>
+        <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBAGER_0000159</owlr:python_name>
         <rdfs:label xml:lang="en">is effector of</rdfs:label>
     </owl:ObjectProperty>
     
@@ -925,7 +925,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     <!-- http://purl.obolibrary.org/obo/OBAGER_0000169 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000169">
-        <owlready_ontology:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBAGER_0000169</owlready_ontology:python_name>
+        <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBAGER_0000169</owlr:python_name>
         <rdfs:label xml:lang="en">has conformation</rdfs:label>
     </owl:ObjectProperty>
     
@@ -937,7 +937,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000134"/>
         <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000172"/>
         <obo:IAO_0000115>X regulates translation of Y iff X regulates expression of Y and the modulation concerns the initiation or progression of translation of Y.</obo:IAO_0000115>
-        <owlready_ontology:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBAGER_0000171</owlready_ontology:python_name>
+        <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBAGER_0000171</owlr:python_name>
         <rdfs:label xml:lang="en">regulates translation of</rdfs:label>
     </owl:ObjectProperty>
     
@@ -947,7 +947,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000172">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000135"/>
-        <owlready_ontology:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBAGER_0000172</owlready_ontology:python_name>
+        <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBAGER_0000172</owlr:python_name>
         <rdfs:label xml:lang="en">has translation regulated by</rdfs:label>
     </owl:ObjectProperty>
     
@@ -958,7 +958,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000173">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000134"/>
         <obo:IAO_0000115>X regulates transcription of Y iff X regulates regulates expression of Y and the modulation concerns the initiation or progression of transcription of Y.</obo:IAO_0000115>
-        <owlready_ontology:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBAGER_0000173</owlready_ontology:python_name>
+        <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBAGER_0000173</owlr:python_name>
         <rdfs:label xml:lang="en">regulates transcription of</rdfs:label>
     </owl:ObjectProperty>
     
@@ -968,7 +968,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000174">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000135"/>
-        <owlready_ontology:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBAGER_0000174</owlready_ontology:python_name>
+        <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBAGER_0000174</owlr:python_name>
         <rdfs:label xml:lang="en">has transcription regulated by</rdfs:label>
     </owl:ObjectProperty>
     
@@ -977,7 +977,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     <!-- http://purl.obolibrary.org/obo/OBAGER_0000175 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000175">
-        <owlready_ontology:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBAGER_0000175</owlready_ontology:python_name>
+        <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBAGER_0000175</owlr:python_name>
         <rdfs:label xml:lang="en">is located in strand</rdfs:label>
     </owl:ObjectProperty>
     
@@ -987,7 +987,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000180">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000040"/>
-        <owlready_ontology:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBAGER_0000180</owlready_ontology:python_name>
+        <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBAGER_0000180</owlr:python_name>
         <rdfs:label xml:lang="en">is direct part of</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1072,9 +1072,9 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <obo:IAO_0000115>x overlaps y if and only if there exists some z such that x has part z and z part of y</obo:IAO_0000115>
         <obo:IAO_0000424>http://purl.obolibrary.org/obo/BFO_0000051 some (http://purl.obolibrary.org/obo/BFO_0000050 some ?Y)</obo:IAO_0000424>
         <obo:RO_0001900 rdf:resource="http://purl.obolibrary.org/obo/RO_0001901"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_go_annotation_extension"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_gocam"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/ro/subsets#ro-eco"/>
+        <oboI:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_go_annotation_extension"/>
+        <oboI:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_gocam"/>
+        <oboI:inSubset rdf:resource="http://purl.obolibrary.org/obo/ro/subsets#ro-eco"/>
         <rdfs:label xml:lang="en">overlaps</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1140,11 +1140,11 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This relation and all sub-relations can be applied to either (1) pairs of entities that are interacting at any moment of time (2) populations or species of entity whose members have the disposition to interact (3) classes whose members have the disposition to interact.</obo:IAO_0000116>
         <obo:IAO_0000117 rdf:resource="https://orcid.org/0000-0002-6601-2165"/>
         <obo:IAO_0000232 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Note that this relationship type, and sub-relationship types may be redundant with process terms from other ontologies. For example, the symbiotic relationship hierarchy parallels GO. The relations are provided as a convenient shortcut. Consider using the more expressive processual form to capture your data. In the future, these relations will be linked to their cognate processes through rules.</obo:IAO_0000232>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">in pairwise interaction with</oboInOwl:hasExactSynonym>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/ro/subsets#ro-eco"/>
+        <oboI:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">in pairwise interaction with</oboI:hasExactSynonym>
+        <oboI:inSubset rdf:resource="http://purl.obolibrary.org/obo/ro/subsets#ro-eco"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">interacts with</rdfs:label>
         <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/ro/docs/interaction-relations/</rdfs:seeAlso>
-        <skos:closeMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/MI_0914</skos:closeMatch>
+        <core:closeMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/MI_0914</core:closeMatch>
     </owl:ObjectProperty>
     
 
@@ -1159,7 +1159,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">molecularly binds with</obo:IAO_0000118>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">molecularly interacts with</rdfs:label>
         <rdfs:seeAlso rdf:resource="http://purl.obolibrary.org/obo/ECO_0000353"/>
-        <skos:closeMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/MI_0915</skos:closeMatch>
+        <core:closeMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/MI_0915</core:closeMatch>
     </owl:ObjectProperty>
     
 
@@ -1202,7 +1202,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <obo:IAO_0000118>starts</obo:IAO_0000118>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.ncbi.nlm.nih.gov/pubmed/20226267</obo:IAO_0000119>
         <cito:citesAsAuthority rdf:resource="http://biorxiv.org/content/early/2014/06/27/006650.abstract"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/RO_0002259"/>
+        <oboI:inSubset rdf:resource="http://purl.obolibrary.org/obo/RO_0002259"/>
         <rdfs:label>is start sequence of</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1232,7 +1232,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <obo:IAO_0000118>ends</obo:IAO_0000118>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.ncbi.nlm.nih.gov/pubmed/20226267</obo:IAO_0000119>
         <cito:citesAsAuthority rdf:resource="http://biorxiv.org/content/early/2014/06/27/006650.abstract"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/RO_0002259"/>
+        <oboI:inSubset rdf:resource="http://purl.obolibrary.org/obo/RO_0002259"/>
         <rdfs:label>is end sequence of</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1258,7 +1258,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <obo:IAO_0000115>inverse of bounds sequence of</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:resource="https://orcid.org/0000-0002-6601-2165"/>
         <cito:citesAsAuthority rdf:resource="http://biorxiv.org/content/early/2014/06/27/006650.abstract"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/RO_0002259"/>
+        <oboI:inSubset rdf:resource="http://purl.obolibrary.org/obo/RO_0002259"/>
         <rdfs:label>is bound by sequence of</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1290,7 +1290,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <obo:IAO_0000117 rdf:resource="https://orcid.org/0000-0002-6601-2165"/>
         <obo:IAO_0000118>contained by</obo:IAO_0000118>
         <cito:citesAsAuthority rdf:resource="http://biorxiv.org/content/early/2014/06/27/006650.abstract"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/RO_0002259"/>
+        <oboI:inSubset rdf:resource="http://purl.obolibrary.org/obo/RO_0002259"/>
         <rdfs:label>is subsequence of</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1332,7 +1332,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a data property that specifies the exact order of bases in a nucleic acid or of amino acids in a protein</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.merriam-webster.com/dictionary/sequence</obo:IAO_0000119>
-        <owlready_ontology:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBAGER_0000006</owlready_ontology:python_name>
+        <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBAGER_0000006</owlr:python_name>
         <rdfs:label xml:lang="en">has sequence</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -1344,8 +1344,8 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">indicates the number designating the place occupied by a nucleotide in a DNA molecule in the 5&apos; to 3&apos; direction of the forward strand</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">adapted from https://www.merriam-webster.com/dictionary/ordinal%20number</obo:IAO_0000119>
-        <terms:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://orcid.org/0000-0002-0142-5591</terms:contributor>
-        <owlready_ontology:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBAGER_0000007</owlready_ontology:python_name>
+        <term:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://orcid.org/0000-0002-0142-5591</term:contributor>
+        <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBAGER_0000007</owlr:python_name>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DNA strand serves as the reference axis of coordinates, but this data property can be assigned to an RNA molecule too, in which case the coordinate indicates the DNA segment from which the RNA molecule was produced.</rdfs:comment>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Note that the coordinate axis is the forward strand, but the same coordinate point to a position in any of the two strands or to a position in the double stranded DNA.</rdfs:comment>
         <rdfs:label xml:lang="en">has coordinate in the DNA</rdfs:label>
@@ -1359,7 +1359,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000007"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">indicates the number designating the place occupied by the firts nucleotide of an object in a DNA molecule in the 5&apos; to 3&apos; direction of the forward strand</obo:IAO_0000115>
-        <owlready_ontology:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBAGER_0000012</owlready_ontology:python_name>
+        <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBAGER_0000012</owlr:python_name>
         <rdfs:label xml:lang="en">has left end coordinate in the DNA</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -1371,7 +1371,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000007"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">indicates the number designating the place occupied by the last nucleotide of an object in a DNA molecule in the 5&apos; to 3&apos; direction of the forward strand</obo:IAO_0000115>
-        <owlready_ontology:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBAGER_0000019</owlready_ontology:python_name>
+        <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBAGER_0000019</owlr:python_name>
         <rdfs:label xml:lang="en">has right end coordinate in the DNA</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -1384,7 +1384,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">indicates the number designating the place occupied by the central nucleotide of an object in a DNA molecule in the 5&apos; to 3&apos; direction of the forward strand</obo:IAO_0000115>
-        <owlready_ontology:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBAGER_0000036</owlready_ontology:python_name>
+        <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBAGER_0000036</owlr:python_name>
         <rdfs:label xml:lang="en">has absolute center position</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -1418,73 +1418,73 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Particle of zero charge, zero rest mass, spin quantum number 1, energy hnu and momentum hnu/c (h is the Planck constant, nu the frequency of radiation and c the speed of light), carrier of electromagnetic force.</obo:IAO_0000115>
-        <chebi:charge rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0</chebi:charge>
-        <chebi:mass rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.0</chebi:mass>
-        <chebi:monoisotopicmass rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.0</chebi:monoisotopicmass>
-        <chebi:smiles rdf:datatype="http://www.w3.org/2001/XMLSchema#string">*</chebi:smiles>
-        <oboInOwl:hasAlternativeId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHEBI:10581</oboInOwl:hasAlternativeId>
-        <oboInOwl:hasAlternativeId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHEBI:14383</oboInOwl:hasAlternativeId>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">KEGG:C00205</oboInOwl:hasDbXref>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">photon</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chebi_ontology</oboInOwl:hasOBONamespace>
-        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lichtquant</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Light</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">foton</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gamma</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hnu</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">light quantum</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHEBI:30212</oboInOwl:id>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/chebi#3_STAR"/>
+        <cheb:charge rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0</cheb:charge>
+        <cheb:mass rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.0</cheb:mass>
+        <cheb:monoisotopicmass rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.0</cheb:monoisotopicmass>
+        <cheb:smiles rdf:datatype="http://www.w3.org/2001/XMLSchema#string">*</cheb:smiles>
+        <oboI:hasAlternativeId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHEBI:10581</oboI:hasAlternativeId>
+        <oboI:hasAlternativeId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHEBI:14383</oboI:hasAlternativeId>
+        <oboI:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">KEGG:C00205</oboI:hasDbXref>
+        <oboI:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">photon</oboI:hasExactSynonym>
+        <oboI:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chebi_ontology</oboI:hasOBONamespace>
+        <oboI:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lichtquant</oboI:hasRelatedSynonym>
+        <oboI:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Light</oboI:hasRelatedSynonym>
+        <oboI:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">foton</oboI:hasRelatedSynonym>
+        <oboI:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gamma</oboI:hasRelatedSynonym>
+        <oboI:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hnu</oboI:hasRelatedSynonym>
+        <oboI:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">light quantum</oboI:hasRelatedSynonym>
+        <oboI:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHEBI:30212</oboI:id>
+        <oboI:inSubset rdf:resource="http://purl.obolibrary.org/obo/chebi#3_STAR"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">photon</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_30212"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lichtquant</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ChEBI</oboInOwl:hasDbXref>
+        <oboI:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ChEBI</oboI:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_30212"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Light</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">KEGG_COMPOUND</oboInOwl:hasDbXref>
+        <oboI:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">KEGG_COMPOUND</oboI:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_30212"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">foton</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ChEBI</oboInOwl:hasDbXref>
+        <oboI:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ChEBI</oboI:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_30212"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gamma</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IUPAC</oboInOwl:hasDbXref>
+        <oboI:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IUPAC</oboI:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_30212"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hnu</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IUPAC</oboInOwl:hasDbXref>
+        <oboI:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IUPAC</oboI:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_30212"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hnu</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UniProt</oboInOwl:hasDbXref>
+        <oboI:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UniProt</oboI:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_30212"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">light quantum</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ChEBI</oboInOwl:hasDbXref>
+        <oboI:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ChEBI</oboI:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_30212"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">photon</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IUPAC</oboInOwl:hasDbXref>
-        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/chebi#IUPAC_NAME"/>
+        <oboI:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IUPAC</oboI:hasDbXref>
+        <oboI:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/chebi#IUPAC_NAME"/>
     </owl:Axiom>
     
 
@@ -1494,25 +1494,25 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_36341">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_36342"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Particle of integer spin quantum number following Bose-Einstein statistics. Bosons are named after Satyendra Nath Bose.</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">boson</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chebi_ontology</oboInOwl:hasOBONamespace>
-        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bosons</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHEBI:36341</oboInOwl:id>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/chebi#3_STAR"/>
+        <oboI:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">boson</oboI:hasExactSynonym>
+        <oboI:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chebi_ontology</oboI:hasOBONamespace>
+        <oboI:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bosons</oboI:hasRelatedSynonym>
+        <oboI:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHEBI:36341</oboI:id>
+        <oboI:inSubset rdf:resource="http://purl.obolibrary.org/obo/chebi#3_STAR"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">boson</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_36341"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">boson</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IUPAC</oboInOwl:hasDbXref>
-        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/chebi#IUPAC_NAME"/>
+        <oboI:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IUPAC</oboI:hasDbXref>
+        <oboI:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/chebi#IUPAC_NAME"/>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_36341"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bosons</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ChEBI</oboInOwl:hasDbXref>
+        <oboI:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ChEBI</oboI:hasDbXref>
     </owl:Axiom>
     
 
@@ -1522,18 +1522,18 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_36342">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000176"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A particle smaller than an atom.</obo:IAO_0000115>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wikipedia:Subatomic_particle</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chebi_ontology</oboInOwl:hasOBONamespace>
-        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subatomic particles</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHEBI:36342</oboInOwl:id>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/chebi#3_STAR"/>
+        <oboI:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wikipedia:Subatomic_particle</oboI:hasDbXref>
+        <oboI:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chebi_ontology</oboI:hasOBONamespace>
+        <oboI:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subatomic particles</oboI:hasRelatedSynonym>
+        <oboI:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHEBI:36342</oboI:id>
+        <oboI:inSubset rdf:resource="http://purl.obolibrary.org/obo/chebi#3_STAR"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subatomic particle</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_36342"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subatomic particles</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ChEBI</oboInOwl:hasDbXref>
+        <oboI:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ChEBI</oboI:hasDbXref>
     </owl:Axiom>
     
 
@@ -1760,7 +1760,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000049"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An extent of DNA greater than zero nucleotides.</obo:IAO_0000115>
-        <terms:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://orcid.org/0000-0002-0142-5591</terms:contributor>
+        <term:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://orcid.org/0000-0002-0142-5591</term:contributor>
         <rdfs:label xml:lang="en">DNA segment</rdfs:label>
     </owl:Class>
     
@@ -3809,7 +3809,7 @@ COB_0000080</obo:IAO_0000119>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000188">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000176"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A material entity that consists of two or more molecular entities that are grouped together based on spatial, functional, or contextual association, without being covalently bonded nor immediately adjacent in the genome nor forming a single chemical structure.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">aggregate of molecular entities</rdfs:label>
+        <rdfs:label xml:lang="en">collection of molecular entities</rdfs:label>
     </owl:Class>
     
 
@@ -4218,5 +4218,5 @@ COB_0000080</obo:IAO_0000119>
 
 
 
-<!-- Generated by the OWL API (version 4.5.6) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
 
