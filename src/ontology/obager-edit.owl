@@ -2941,7 +2941,7 @@ COB_0000013</obo:IAO_0000119>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000136"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000178"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PROK_0000012"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -4009,6 +4009,17 @@ COB_0000080</obo:IAO_0000119>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000061"/>
         <obo:IAO_0000115>an expressable segment that is transcribed or translated as a single continuos molecule</obo:IAO_0000115>
         <rdfs:label xml:lang="en">unit of expression</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PROK_0000013 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROK_0000013">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000188"/>
+        <obo:IAO_0000115>A set o genes (or a set of regulons) whose products are increased in response to a common environmental stimulus.</obo:IAO_0000115>
+        <obo:IAO_0000119>PMID: ﻿6339477</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">stimulon</rdfs:label>
     </owl:Class>
     
 
