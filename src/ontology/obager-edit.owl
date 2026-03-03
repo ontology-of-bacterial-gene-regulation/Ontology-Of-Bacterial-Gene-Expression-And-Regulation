@@ -724,7 +724,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     <!-- http://purl.obolibrary.org/obo/OBAGER_0000073 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000073">
-        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000068"/>
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
         <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000180"/>
         <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBAGER_0000073</owlr:python_name>
         <rdfs:label xml:lang="en">has direct part</rdfs:label>
@@ -965,7 +965,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     <!-- http://purl.obolibrary.org/obo/OBAGER_0000180 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000180">
-        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000040"/>
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
         <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBAGER_0000180</owlr:python_name>
         <rdfs:label xml:lang="en">is direct part of</rdfs:label>
     </owl:ObjectProperty>
