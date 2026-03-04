@@ -9,6 +9,7 @@
      xmlns:cito="http://purl.org/spar/cito/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:terms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/ro.owl">
         <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/ro/releases/2025-12-17/ro.owl"/>
@@ -222,6 +223,12 @@ Annotations: IAO_0000424 &quot;http://purl.obolibrary.org/obo/BFO_0000051 some (
     
 
 
+    <!-- http://purl.org/dc/terms/source -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/source"/>
+    
+
+
     <!-- http://purl.org/spar/cito/citesAsAuthority -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/spar/cito/citesAsAuthority"/>
@@ -356,6 +363,35 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     
 
 
+    <!-- http://purl.obolibrary.org/obo/RO_0000057 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000057">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <obo:IAO_0000111 xml:lang="en">has participant</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">this blood coagulation has participant this blood clot</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">this investigation has participant this investigator</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">this process has participant this input material (or this output material)</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">a relation between a process and a continuant, in which the continuant is somehow involved in the process</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">Has_participant is a primitive instance-level relation between a process, a continuant, and a time at which the continuant participates in some way in the process. The relation obtains, for example, when this particular process of oxygen exchange across this particular alveolar membrane has_participant this particular sample of hemoglobin at this particular time.</obo:IAO_0000116>
+        <obo:IAO_0000118 xml:lang="en">has_participant</obo:IAO_0000118>
+        <terms:source>http://www.obofoundry.org/ro/#OBO_REL:has_participant</terms:source>
+        <rdfs:label xml:lang="en">has participant</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002019 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002019">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002233"/>
+        <obo:IAO_0000115>A relationship that holds between between a receptor and an chemical entity, typically a small molecule or peptide, that carries information between cells or compartments of a cell and which binds the receptor and regulates its effector function.</obo:IAO_0000115>
+        <oboInOwl:created_by rdf:resource="https://orcid.org/0000-0002-7073-9172"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-07-19T17:30:36Z</oboInOwl:creation_date>
+        <rdfs:label>has ligand</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/RO_0002131 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002131">
@@ -368,6 +404,24 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_gocam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/ro/subsets#ro-eco"/>
         <rdfs:label xml:lang="en">overlaps</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002233 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002233">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
+        <obo:IAO_0000115>p has input c iff: p is a process, c is a material entity, c is a participant in p, c is present at the start of p, and the state of c is modified during p.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:resource="https://orcid.org/0000-0002-6601-2165"/>
+        <obo:IAO_0000118>consumes</obo:IAO_0000118>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_go_annotation_extension"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_go_ontology"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_gocam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/ro/subsets#ro-eco"/>
+        <rdfs:label xml:lang="en">has input</rdfs:label>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://wiki.geneontology.org/Has_input</rdfs:seeAlso>
     </owl:ObjectProperty>
     
 
