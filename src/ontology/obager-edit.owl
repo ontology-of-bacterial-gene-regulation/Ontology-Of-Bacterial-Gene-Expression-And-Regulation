@@ -583,7 +583,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000091"/>
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000050"/>
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000092"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a relationship that holds between a nucleotide region and a molecule, whereby they bind in a sequence specific manner</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a relationship that holds between a nucleotide region and a molecule, whereby they bind in a specific manner</obo:IAO_0000115>
         <owlready_ontology:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBAGER_0000010</owlready_ontology:python_name>
         <rdfs:label xml:lang="en">is recognized by</rdfs:label>
     </owl:ObjectProperty>
@@ -1844,7 +1844,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DNA segment where a TF binds in a sequence-specific manner</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DNA segment where a TF binds specifically</obo:IAO_0000115>
         <obo:OBAGER_0000033 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TFBS</obo:OBAGER_0000033>
         <rdfs:label xml:lang="en">transcription factor binding site</rdfs:label>
     </owl:Class>
@@ -3239,6 +3239,7 @@ COB_0000013</obo:IAO_0000119>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">an effector that acts on a regulatory component of a genetic switch</obo:IAO_0000115>
+        <rdfs:comment>delete</rdfs:comment>
         <rdfs:label xml:lang="en">effector of a gene expression regulator</rdfs:label>
     </owl:Class>
     
@@ -3387,6 +3388,7 @@ COB_0000013</obo:IAO_0000119>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000149">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000127"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">an effector that acts on an enzyme</obo:IAO_0000115>
+        <rdfs:comment>delete</rdfs:comment>
         <rdfs:label xml:lang="en">effector of enzyme</rdfs:label>
     </owl:Class>
     
@@ -3821,7 +3823,7 @@ COB_0000080</obo:IAO_0000119>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000187">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000193"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A TF functional disposition that is realized independently of any effector binding or covalent modification. In this case, the TF’s ability to bind its target DNA and modulate transcription is governed solely by its expression level, such that the disposition is constitutively realizable whenever the TF is present.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">constituvely active TF</rdfs:label>
+        <rdfs:label xml:lang="en">constitutively active TF</rdfs:label>
     </owl:Class>
     
 
