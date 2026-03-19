@@ -89,8 +89,8 @@ imports/so_import.owl: mirror/so.owl imports/so_terms.txt imports/so_upper_terms
 	$(ROBOT) extract -i $< --method MIREOT -U imports/so_upper_terms.txt -L imports/so_terms.txt -O $(BASE)/$@ -o $@
 .PRECIOUS: imports/so_import.owl
 
-imports/ro_import.owl: mirror/ro.owl imports/ro_terms.txt imports/ro_upper_terms.txt
-	$(ROBOT) extract -i $< --method MIREOT -U imports/ro_upper_terms.txt -L imports/ro_terms.txt -O $(BASE)/$@ -o $@
+imports/ro_import.owl: mirror/ro.owl imports/ro_terms.txt
+	$(ROBOT) extract -i $< --method SUBSET --term-file imports/ro_terms.txt -O $(BASE)/$@ -o $@
 .PRECIOUS: imports/ro_import.owl
 
 imports/ecto_import.owl: mirror/ecto.owl imports/ecto_terms.txt
