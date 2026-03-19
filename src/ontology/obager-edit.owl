@@ -3801,7 +3801,7 @@ COB_0000080</obo:IAO_0000119>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a DNA continuous segment that carries the information for the structure of at least one functional RNA or polypeptide chain, or a non-functional copy of a parent gene (pseudogene).</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">gene</rdfs:label>
+        <rdfs:label xml:lang="en">bacterial gene</rdfs:label>
     </owl:Class>
     
 
