@@ -3860,8 +3860,8 @@ COB_0000080</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000187">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000193"/>
-        <obo:IAO_0000115>A TF functional disposition that is realized independently of any effector binding or covalent modification. In this case, the TF’s ability to bind its target DNA and modulate transcription is governed solely by its expression level, such that the disposition is constitutively realizable whenever the TF is present.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">constitutively active TF</rdfs:label>
+        <obo:IAO_0000115>A regulator functional disposition that is realized independently of any effector binding or covalent modification. In this case, the regulator’s ability to bind its target DNA and modulate transcription is governed solely by its expression level, such that the disposition is constitutively realizable whenever the regulator is present.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">constitutively active regulator</rdfs:label>
     </owl:Class>
     
 
@@ -3901,8 +3901,8 @@ COB_0000080</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000191">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000195"/>
-        <obo:IAO_0000115>A conditionally active TF functional disposition that is currently realized; that is, the TF is in a molecular state that enables it to bind its target DNA and modulate transcription.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">TF active state</rdfs:label>
+        <obo:IAO_0000115>A conditionally active regulator functional disposition that is currently realized; that is, the TF is in a molecular state that enables it to bind its target nucleotide site and modulate transcription or translation.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">regulator active state</rdfs:label>
     </owl:Class>
     
 
@@ -3911,8 +3911,8 @@ COB_0000080</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000192">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000195"/>
-        <obo:IAO_0000115>A conditionally active TF functional disposition that is currently not realized due to the absence of necessary enabling conditions, such as lack of effector binding, absence of covalent modification, or sequestration by another molecule.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">TF inactive state</rdfs:label>
+        <obo:IAO_0000115>A conditionally active regulator functional disposition that is currently not realized due to the absence of necessary enabling conditions, such as lack of effector binding, absence of covalent modification, or sequestration by another molecule.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">regulator inactive state</rdfs:label>
     </owl:Class>
     
 
@@ -3920,8 +3920,8 @@ COB_0000080</obo:IAO_0000119>
     <!-- http://purl.obolibrary.org/obo/OBAGER_0000193 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000193">
-        <obo:IAO_0000115>A realizable property that inheres in a transcription factor (TF), by means of which the TF is capable of regulating gene expression under appropriate conditions. The realization of this disposition occurs when the TF binds its target DNA and modulates transcription.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">TF functional disposition</rdfs:label>
+        <obo:IAO_0000115>A realizable property that inheres in a macromolecular regulator, TF or small RNA, by means of which the macromolecular regulator is capable of regulating gene expression under appropriate conditions. The realization of this disposition occurs when the regulator binds its target nucleotide site and modulates transcription or translation.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">regulator functional disposition</rdfs:label>
     </owl:Class>
     
 
@@ -3940,8 +3940,8 @@ COB_0000080</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000195">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000193"/>
-        <obo:IAO_0000115>A TF functional disposition that is realized only under specific conditions, such as the binding of an effector molecule, a covalent modification, or the presence of particular environmental signals. The disposition enables the TF to regulate gene expression by binding to its DNA target and modulating transcription, but this realization is contingent on context-dependent molecular or environmental triggers.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">conditionally active TF</rdfs:label>
+        <obo:IAO_0000115>A regulator functional disposition that is realized only under specific conditions, such as the binding of an effector molecule, a covalent modification, or the presence of particular environmental signals. The disposition enables the regulator to control gene expression by binding to its nucleotide site target and modulating transcription or translation, but this realization is contingent on context-dependent molecular or environmental triggers.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">conditionally active regulator</rdfs:label>
     </owl:Class>
     
 
