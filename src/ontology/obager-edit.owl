@@ -71,14 +71,14 @@
     <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115">
-        <obo:IAO_0000111 xml:lang="en">definition</obo:IAO_0000111>
         <obo:IAO_0000111>definition</obo:IAO_0000111>
+        <obo:IAO_0000111 xml:lang="en">definition</obo:IAO_0000111>
         <obo:IAO_0000111>textual definition</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
-        <obo:IAO_0000115 xml:lang="en">The official OBI definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions.</obo:IAO_0000115>
-        <obo:IAO_0000115 xml:lang="en">The official definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions.</obo:IAO_0000115>
         <obo:IAO_0000115>A property representing the English language definitions of what NCI means by the concept. They may also include information about the definition&apos;s source and attribution in a form that can easily be interpreted by software.</obo:IAO_0000115>
         <obo:IAO_0000115>English language definitions of what NCI means by the concept. These are limited to 1024 characters. They may also include information about the definition&apos;s source and attribution in a form that can easily be interpreted by software.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">The official OBI definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">The official definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions.</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">2012-04-05: 
 Barry Smith
 
@@ -123,8 +123,8 @@ We also have the outstanding issue of how to aim different definitions to differ
         <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</obo:IAO_0000119>
         <oboInOwl:hasExactSynonym>DEFINITION</oboInOwl:hasExactSynonym>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
-        <rdfs:label xml:lang="en">definition</rdfs:label>
         <rdfs:label>definition</rdfs:label>
+        <rdfs:label xml:lang="en">definition</rdfs:label>
         <rdfs:label>textual definition</rdfs:label>
     </owl:AnnotationProperty>
     <owl:Axiom>
@@ -152,8 +152,8 @@ We also have the outstanding issue of how to aim different definitions to differ
         <obo:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obofoundry.org/obo/obi&gt;</obo:IAO_0000119>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
-        <rdfs:label xml:lang="en">editor note</rdfs:label>
         <rdfs:label>editor note</rdfs:label>
+        <rdfs:label xml:lang="en">editor note</rdfs:label>
     </owl:AnnotationProperty>
     
 
@@ -399,14 +399,14 @@ Annotations: IAO_0000424 &quot;http://purl.obolibrary.org/obo/BFO_0000051 some (
     <!-- http://www.geneontology.org/formats/oboInOwl#hasExactSynonym -->
 
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym">
-        <obo:IAO_0000115>An alternative label for a class or property which has the exact same meaning than the preferred name/primary label.</obo:IAO_0000115>
         <obo:IAO_0000115>A property representing a fully qualified synonym, contains the string, term type, source, and an optional source code if appropriate. Each subfield is deliniated to facilitate interpretation by software.</obo:IAO_0000115>
+        <obo:IAO_0000115>An alternative label for a class or property which has the exact same meaning than the preferred name/primary label.</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:resource="http://orcid.org/0000-0001-5208-3432"/>
         <obo:IAO_0000233>https://github.com/information-artifact-ontology/ontology-metadata/issues/20</obo:IAO_0000233>
         <oboInOwl:hasExactSynonym>FULL_SYN</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Synonym with Source Data</oboInOwl:hasExactSynonym>
-        <rdfs:label xml:lang="en">has exact synonym</rdfs:label>
         <rdfs:label>has exact synonym</rdfs:label>
+        <rdfs:label xml:lang="en">has exact synonym</rdfs:label>
         <rdfs:label>has_exact_synonym</rdfs:label>
         <rdfs:seeAlso>https://github.com/information-artifact-ontology/ontology-metadata/issues/20</rdfs:seeAlso>
     </owl:AnnotationProperty>
@@ -486,10 +486,10 @@ Annotations: IAO_0000424 &quot;http://purl.obolibrary.org/obo/BFO_0000051 some (
     <!-- http://www.w3.org/2000/01/rdf-schema#label -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#label">
-        <obo:IAO_0000111 xml:lang="en">label</obo:IAO_0000111>
         <obo:IAO_0000111>label</obo:IAO_0000111>
-        <rdfs:label xml:lang="en">label</rdfs:label>
+        <obo:IAO_0000111 xml:lang="en">label</obo:IAO_0000111>
         <rdfs:label>label</rdfs:label>
+        <rdfs:label xml:lang="en">label</rdfs:label>
     </owl:AnnotationProperty>
     
 
@@ -1225,13 +1225,13 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002516">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002524"/>
         <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002517"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
         <obo:IAO_0000112>Every CDS has as a start sequence the start codon for that transcript</obo:IAO_0000112>
         <obo:IAO_0000115>x has start sequence y if the start of x is identical to the start of y, and x has y as a subsequence</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:resource="https://orcid.org/0000-0002-6601-2165"/>
         <obo:IAO_0000118>started by</obo:IAO_0000118>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.ncbi.nlm.nih.gov/pubmed/20226267</obo:IAO_0000119>
         <cito:citesAsAuthority rdf:resource="http://biorxiv.org/content/early/2014/06/27/006650.abstract"/>
+        <rdfs:comment>I need to eliminate the transivite axiom from this property.</rdfs:comment>
         <rdfs:label>has start sequence</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1241,13 +1241,13 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002517">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002525"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
         <obo:IAO_0000115>inverse of has start sequence</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:resource="https://orcid.org/0000-0002-6601-2165"/>
         <obo:IAO_0000118>starts</obo:IAO_0000118>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.ncbi.nlm.nih.gov/pubmed/20226267</obo:IAO_0000119>
         <cito:citesAsAuthority rdf:resource="http://biorxiv.org/content/early/2014/06/27/006650.abstract"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/RO_0002259"/>
+        <rdfs:comment>I need to eliminate the transitive axiom from this property.</rdfs:comment>
         <rdfs:label>is start sequence of</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1258,13 +1258,13 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002518">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002524"/>
         <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002519"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
         <obo:IAO_0000112>Every CDS has as an end sequence the stop codon for that transcript (note this follows from the SO definition of CDS, in which stop codons are included)</obo:IAO_0000112>
         <obo:IAO_0000115>x has end sequence y if the end of x is identical to the end of y, and x has y as a subsequence</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:resource="https://orcid.org/0000-0002-6601-2165"/>
         <obo:IAO_0000118>ended by</obo:IAO_0000118>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.ncbi.nlm.nih.gov/pubmed/20226267</obo:IAO_0000119>
         <cito:citesAsAuthority rdf:resource="http://biorxiv.org/content/early/2014/06/27/006650.abstract"/>
+        <rdfs:comment>I need to eliminate the transitive axiom from this property.</rdfs:comment>
         <rdfs:label>has end sequence</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1274,13 +1274,13 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002519">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002525"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
         <obo:IAO_0000115>inverse of has end sequence</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:resource="https://orcid.org/0000-0002-6601-2165"/>
         <obo:IAO_0000118>ends</obo:IAO_0000118>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.ncbi.nlm.nih.gov/pubmed/20226267</obo:IAO_0000119>
         <cito:citesAsAuthority rdf:resource="http://biorxiv.org/content/early/2014/06/27/006650.abstract"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/RO_0002259"/>
+        <rdfs:comment>I need to eliminate the transitive axiom from this property.</rdfs:comment>
         <rdfs:label>is end sequence of</rdfs:label>
     </owl:ObjectProperty>
     
@@ -3527,8 +3527,8 @@ COB_0000080</obo:IAO_0000119>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>a complex of molecular entities formed by a transcription factor and a molecular effector</obo:IAO_0000115>
-        <rdfs:comment>When the issue of the ligand superproperties is resolved, maybe It is better to use &apos;has ligand&apos; to link this class to the effector class.</rdfs:comment>
         <rdfs:comment>Here we intend to include both  non-covalently and covalently bound  ligands, so methylated and phosphorylated forms can be included. The interaction property &quot;covalent&quot; or &quot;non-covalent&quot; should be added to specific instances of the class.</rdfs:comment>
+        <rdfs:comment>When the issue of the ligand superproperties is resolved, maybe It is better to use &apos;has ligand&apos; to link this class to the effector class.</rdfs:comment>
         <rdfs:label xml:lang="en">TF bound to ligand</rdfs:label>
     </owl:Class>
     
@@ -4280,5 +4280,5 @@ COB_0000080</obo:IAO_0000119>
 
 
 
-<!-- Generated by the OWL API (version 4.5.29) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
 
