@@ -3528,7 +3528,7 @@ COB_0000080</obo:IAO_0000119>
         </rdfs:subClassOf>
         <obo:IAO_0000115>a complex of molecular entities formed by a transcription factor and a molecular effector</obo:IAO_0000115>
         <rdfs:comment>Here we intend to include both  non-covalently and covalently bound  ligands, so methylated and phosphorylated forms can be included. The interaction property &quot;covalent&quot; or &quot;non-covalent&quot; should be added to specific instances of the class.</rdfs:comment>
-        <rdfs:comment>When the issue of the ligand superproperties is resolved, maybe It is better to use &apos;has ligand&apos; to link this class to the effector class.</rdfs:comment>
+        <rdfs:comment>When the issue of the ligand superproperties in RO is resolved, maybe It is better to use &apos;has ligand&apos; to link this class to the effector class.</rdfs:comment>
         <rdfs:label xml:lang="en">TF bound to ligand</rdfs:label>
     </owl:Class>
     
@@ -3541,11 +3541,11 @@ COB_0000080</obo:IAO_0000119>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000032"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000226"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>a molecular state of a transcription factor (TF) that causally affects or enables its regulatory activity on gene expression</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">TF state</rdfs:label>
+        <obo:IAO_0000115>an alternative state of molecular entity characterized by molecular configurations or modifications that affect a macromolecular regulator&apos;s activity, stability, or interactions, thereby affecting its regulatory activity on gene expression</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">macromolecular regulator structural state</rdfs:label>
     </owl:Class>
     
 
@@ -3672,15 +3672,15 @@ COB_0000080</obo:IAO_0000119>
     <!-- http://purl.obolibrary.org/obo/OBAGER_0000166 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000166">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000194"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000158"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000169"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000138"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>a structural state in which the TF has not undergone post-translational modifications that alter its regulatory capacity</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">unmodified TF</rdfs:label>
+        <obo:IAO_0000115>a structural state in which the macromolecular regulator has not undergone modifications that alter its regulatory capacity</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">unmodified regulator</rdfs:label>
     </owl:Class>
     
 
@@ -3688,9 +3688,9 @@ COB_0000080</obo:IAO_0000119>
     <!-- http://purl.obolibrary.org/obo/OBAGER_0000167 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000167">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000194"/>
-        <obo:IAO_0000115>the state of a TF after being modified by an effector</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">modified TF</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000158"/>
+        <obo:IAO_0000115>the state of a macromolecular regulator after being modified by an effector</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">modified regulator</rdfs:label>
     </owl:Class>
     
 
@@ -3860,8 +3860,8 @@ COB_0000080</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000187">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000193"/>
-        <obo:IAO_0000115>A regulator functional disposition that is realized independently of any effector binding or covalent modification. In this case, the regulator’s ability to bind its target DNA and modulate transcription is governed solely by its expression level, such that the disposition is constitutively realizable whenever the regulator is present.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">constitutively active regulator</rdfs:label>
+        <obo:IAO_0000115>A macromolecular regulator functional disposition that is realized independently of any effector binding or covalent modification. In this case, the regulator’s ability to bind its target DNA and modulate transcription is governed solely by its expression level, such that the disposition is constitutively realizable whenever the regulator is present.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">constitutively active macromolecular regulator</rdfs:label>
     </owl:Class>
     
 
@@ -3901,8 +3901,8 @@ COB_0000080</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000191">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000195"/>
-        <obo:IAO_0000115>A conditionally active regulator functional disposition that is currently realized; that is, the TF is in a molecular state that enables it to bind its target nucleotide site and modulate transcription or translation.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">regulator active state</rdfs:label>
+        <obo:IAO_0000115>A conditionally active macromolucular regulator functional disposition that is currently realized; that is, the TF is in a molecular state that enables it to bind its target nucleotide site and modulate transcription or translation.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">macromolecular regulator active state</rdfs:label>
     </owl:Class>
     
 
@@ -3911,8 +3911,8 @@ COB_0000080</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000192">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000195"/>
-        <obo:IAO_0000115>A conditionally active regulator functional disposition that is currently not realized due to the absence of necessary enabling conditions, such as lack of effector binding, absence of covalent modification, or sequestration by another molecule.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">regulator inactive state</rdfs:label>
+        <obo:IAO_0000115>A conditionally active macromolecular regulator functional disposition that is currently not realized due to the absence of necessary enabling conditions, such as lack of effector binding, absence of covalent modification, or sequestration by another molecule.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">macromolecular regulator inactive state</rdfs:label>
     </owl:Class>
     
 
@@ -3921,17 +3921,7 @@ COB_0000080</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000193">
         <obo:IAO_0000115>A realizable property that inheres in a macromolecular regulator, TF or small RNA, by means of which the macromolecular regulator is capable of regulating gene expression under appropriate conditions. The realization of this disposition occurs when the regulator binds its target nucleotide site and modulates transcription or translation.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">regulator functional disposition</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBAGER_0000194 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000194">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000158"/>
-        <obo:IAO_0000115>a TF state characterized by molecular configurations or modifications that affect its activity, stability, or interactions</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">structural state</rdfs:label>
+        <rdfs:label xml:lang="en">macromolecular regulator functional disposition</rdfs:label>
     </owl:Class>
     
 
@@ -3940,8 +3930,8 @@ COB_0000080</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000195">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000193"/>
-        <obo:IAO_0000115>A regulator functional disposition that is realized only under specific conditions, such as the binding of an effector molecule, a covalent modification, or the presence of particular environmental signals. The disposition enables the regulator to control gene expression by binding to its nucleotide site target and modulating transcription or translation, but this realization is contingent on context-dependent molecular or environmental triggers.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">conditionally active regulator</rdfs:label>
+        <obo:IAO_0000115>A macromolecular regulator functional disposition that is realized only under specific conditions, such as the binding of an effector molecule, a covalent modification, or the presence of particular environmental signals. The disposition enables the regulator to control gene expression by binding to its nucleotide site target and modulating transcription or translation, but this realization is contingent on context-dependent molecular or environmental triggers.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">conditionally active macromolecular regulator</rdfs:label>
     </owl:Class>
     
 
@@ -4230,6 +4220,63 @@ COB_0000080</obo:IAO_0000119>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">core RNA polymerase</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBAGER_0000223 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000223">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000167"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000133"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000150"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000141"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000169"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000139"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>a complex of molecular entities formed by a RNA and a molecular effector</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">RNA bound to ligand</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBAGER_0000224 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000224">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000167"/>
+        <obo:IAO_0000115>a RNA alternative state that results of the modification of the RNA by a physical effector sucha as light or termperature</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">RNA modified by physical effector</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBAGER_0000226 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000226">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000071"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000038"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000220"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label xml:lang="en">macromolecular regulator</rdfs:label>
     </owl:Class>
     
 
