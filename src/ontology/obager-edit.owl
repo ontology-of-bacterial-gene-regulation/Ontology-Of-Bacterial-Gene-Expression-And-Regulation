@@ -290,6 +290,14 @@ Annotations: IAO_0000424 &quot;http://purl.obolibrary.org/obo/BFO_0000051 some (
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OBAGER_0000228 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000228">
+        <rdfs:label xml:lang="en">for OBAGER</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/RO_0001900 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/RO_0001900">
@@ -1230,8 +1238,8 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <obo:IAO_0000117 rdf:resource="https://orcid.org/0000-0002-6601-2165"/>
         <obo:IAO_0000118>started by</obo:IAO_0000118>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.ncbi.nlm.nih.gov/pubmed/20226267</obo:IAO_0000119>
+        <obo:OBAGER_0000228>Transitivity axiom needs to be eliminated from this property.</obo:OBAGER_0000228>
         <cito:citesAsAuthority rdf:resource="http://biorxiv.org/content/early/2014/06/27/006650.abstract"/>
-        <rdfs:comment>I need to eliminate the transivite axiom from this property.</rdfs:comment>
         <rdfs:label>has start sequence</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1245,9 +1253,9 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <obo:IAO_0000117 rdf:resource="https://orcid.org/0000-0002-6601-2165"/>
         <obo:IAO_0000118>starts</obo:IAO_0000118>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.ncbi.nlm.nih.gov/pubmed/20226267</obo:IAO_0000119>
+        <obo:OBAGER_0000228>Transitivity axiom needs to be eliminated from this property.</obo:OBAGER_0000228>
         <cito:citesAsAuthority rdf:resource="http://biorxiv.org/content/early/2014/06/27/006650.abstract"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/RO_0002259"/>
-        <rdfs:comment>I need to eliminate the transitive axiom from this property.</rdfs:comment>
         <rdfs:label>is start sequence of</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1263,8 +1271,8 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <obo:IAO_0000117 rdf:resource="https://orcid.org/0000-0002-6601-2165"/>
         <obo:IAO_0000118>ended by</obo:IAO_0000118>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.ncbi.nlm.nih.gov/pubmed/20226267</obo:IAO_0000119>
+        <obo:OBAGER_0000228>Transitivity axiom needs to be eliminated from this property.</obo:OBAGER_0000228>
         <cito:citesAsAuthority rdf:resource="http://biorxiv.org/content/early/2014/06/27/006650.abstract"/>
-        <rdfs:comment>I need to eliminate the transitive axiom from this property.</rdfs:comment>
         <rdfs:label>has end sequence</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1278,9 +1286,9 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <obo:IAO_0000117 rdf:resource="https://orcid.org/0000-0002-6601-2165"/>
         <obo:IAO_0000118>ends</obo:IAO_0000118>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.ncbi.nlm.nih.gov/pubmed/20226267</obo:IAO_0000119>
+        <obo:OBAGER_0000228>Transitivity axiom needs to be eliminated from this property.</obo:OBAGER_0000228>
         <cito:citesAsAuthority rdf:resource="http://biorxiv.org/content/early/2014/06/27/006650.abstract"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/RO_0002259"/>
-        <rdfs:comment>I need to eliminate the transitive axiom from this property.</rdfs:comment>
         <rdfs:label>is end sequence of</rdfs:label>
     </owl:ObjectProperty>
     
@@ -4246,7 +4254,7 @@ COB_0000080</obo:IAO_0000119>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000139"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>a complex of molecular entities formed by a RNA and a molecular effector</obo:IAO_0000115>
+        <obo:IAO_0000115>a complex of molecular entities formed by an RNA and a molecular effector</obo:IAO_0000115>
         <rdfs:label xml:lang="en">RNA bound to ligand</rdfs:label>
     </owl:Class>
     
@@ -4277,6 +4285,16 @@ COB_0000080</obo:IAO_0000119>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:label xml:lang="en">macromolecular regulator</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBAGER_0000227 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000227">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000155"/>
+        <obo:IAO_0000115>a complex of molecular entities formed by a sRNA and an RNA fragment in some macromolecular regulator structural state.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">sRNA bound to sRNA regulatory binding site</rdfs:label>
     </owl:Class>
     
 
