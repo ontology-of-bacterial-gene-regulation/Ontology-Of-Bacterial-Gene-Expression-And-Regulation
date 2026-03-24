@@ -619,7 +619,6 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBAGER_00000208">
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000092"/>
-        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000061"/>
         <obo:IAO_0000115>X enables expression of Y if and only if Y is an expressed segment and X is a material object whose presence is required for Y to be transcribed or translated in canonical gene expression contexts.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">enables expression of</rdfs:label>
     </owl:ObjectProperty>
@@ -2392,51 +2391,6 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     
 
 
-    <!-- http://purl.obolibrary.org/obo/OBAGER_0000061 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000061">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000050"/>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <owl:Class>
-                                <owl:intersectionOf rdf:parseType="Collection">
-                                    <owl:Restriction>
-                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002524"/>
-                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000061"/>
-                                    </owl:Restriction>
-                                    <owl:Restriction>
-                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002524"/>
-                                        <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000061"/>
-                                    </owl:Restriction>
-                                </owl:intersectionOf>
-                            </owl:Class>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000039"/>
-                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000044"/>
-                            </owl:Restriction>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000040"/>
-                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000061"/>
-                            </owl:Restriction>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000041"/>
-                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000055"/>
-                            </owl:Restriction>
-                        </owl:unionOf>
-                    </owl:Class>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000050"/>
-        <obo:IAO_0000115>A nucleotide segment that is transcribed or translated.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">expressable segment</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/OBAGER_0000062 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000062">
@@ -2454,64 +2408,6 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <obo:IAO_0000115>A base is a nucleotide region that corresponds to a single unit of a nucleotide polymer.</obo:IAO_0000115>
         <rdfs:isDefinedBy>SO</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">base</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBAGER_0000064 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000064">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000039"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000044"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000040"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000064"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002524"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000064"/>
-                    </owl:Restriction>
-                </owl:unionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000004"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000061"/>
-        <obo:IAO_0000115>A DNA segment that is transcribed.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">DNA expressable segment</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBAGER_0000065 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000065">
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000040"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000065"/>
-            </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000041"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000055"/>
-            </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002524"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000065"/>
-            </owl:Restriction>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000049"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000061"/>
-        <obo:IAO_0000115>an RNA segment that is translated.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">RNA expressable segment</rdfs:label>
     </owl:Class>
     
 
@@ -4136,8 +4032,8 @@ COB_0000080</obo:IAO_0000119>
                 </owl:unionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000061"/>
-        <obo:IAO_0000115>an expressable segment that is transcribed or translated as a single continuos molecule</obo:IAO_0000115>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000050"/>
+        <obo:IAO_0000115>a nucleotide segment that is transcribed or translated as a single continuos molecule</obo:IAO_0000115>
         <rdfs:label xml:lang="en">unit of expression</rdfs:label>
     </owl:Class>
     
