@@ -385,6 +385,14 @@ Annotations: IAO_0000424 &quot;http://purl.obolibrary.org/obo/BFO_0000051 some (
     
 
 
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym">
+        <rdfs:label>has_broad_synonym</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
     <!-- http://www.geneontology.org/formats/oboInOwl#hasDbXref -->
 
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasDbXref">
@@ -443,13 +451,17 @@ Annotations: IAO_0000424 &quot;http://purl.obolibrary.org/obo/BFO_0000051 some (
 
     <!-- http://www.geneontology.org/formats/oboInOwl#hasOBONamespace -->
 
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace"/>
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace">
+        <rdfs:label>has_obo_namespace</rdfs:label>
+    </owl:AnnotationProperty>
     
 
 
     <!-- http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym -->
 
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym">
+        <rdfs:label>has_related_synonym</rdfs:label>
+    </owl:AnnotationProperty>
     
 
 
@@ -461,7 +473,9 @@ Annotations: IAO_0000424 &quot;http://purl.obolibrary.org/obo/BFO_0000051 some (
 
     <!-- http://www.geneontology.org/formats/oboInOwl#id -->
 
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#id"/>
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#id">
+        <rdfs:label>id</rdfs:label>
+    </owl:AnnotationProperty>
     
 
 
@@ -2217,32 +2231,6 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     
 
 
-    <!-- http://purl.obolibrary.org/obo/OBAGER_0000043 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000043">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000049"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000040"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000104"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000213"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000196"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <obo:IAO_0000115>a segment of an mRNA that interacts with the complementary anti-Shine Dalgarno (anti-SD) sequence in the 16S ribosomal RNA to recruit the ribosome small subunit (SSU, 30S) to the ribosome binding site (RBS) during SD-led initiation of translation</obo:IAO_0000115>
-        <obo:IAO_0000119>PMID: ﻿29661790</obo:IAO_0000119>
-        <rdfs:comment>cambiar la propiedad que une shine-delgarno y coding sequence a &quot;locates tranlation initiation of&quot;.</rdfs:comment>
-        <rdfs:label xml:lang="en">shine-dalgarno sequence</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/OBAGER_0000044 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000044">
@@ -3549,7 +3537,7 @@ COB_0000080</obo:IAO_0000119>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000226"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000032"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>an alternative state of molecular entity characterized by molecular configurations or modifications that affect a macromolecular regulator&apos;s activity, stability, or interactions, thereby affecting its regulatory activity on gene expression</obo:IAO_0000115>
@@ -3623,7 +3611,7 @@ COB_0000080</obo:IAO_0000119>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000158"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000229"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000129"/>
@@ -3642,7 +3630,7 @@ COB_0000080</obo:IAO_0000119>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000158"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000229"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000134"/>
@@ -3661,7 +3649,7 @@ COB_0000080</obo:IAO_0000119>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000158"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000229"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000173"/>
@@ -3680,15 +3668,15 @@ COB_0000080</obo:IAO_0000119>
     <!-- http://purl.obolibrary.org/obo/OBAGER_0000166 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000166">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000158"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000229"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000169"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000138"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>a structural state in which the macromolecular regulator has not undergone modifications that alter its regulatory capacity</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">unmodified regulator</rdfs:label>
+        <obo:IAO_0000115>a structural state in which the TF has not undergone post-translational modifications that alter its regulatory capacity</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">unmodified TF</rdfs:label>
     </owl:Class>
     
 
@@ -3696,9 +3684,9 @@ COB_0000080</obo:IAO_0000119>
     <!-- http://purl.obolibrary.org/obo/OBAGER_0000167 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000167">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000158"/>
-        <obo:IAO_0000115>the state of a macromolecular regulator after being modified by an effector</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">modified regulator</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000229"/>
+        <obo:IAO_0000115>the state of a TF after being modified by an effector</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">modified TF</rdfs:label>
     </owl:Class>
     
 
@@ -4235,7 +4223,7 @@ COB_0000080</obo:IAO_0000119>
     <!-- http://purl.obolibrary.org/obo/OBAGER_0000223 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000223">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000167"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000232"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
@@ -4263,7 +4251,7 @@ COB_0000080</obo:IAO_0000119>
     <!-- http://purl.obolibrary.org/obo/OBAGER_0000224 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000224">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000167"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000232"/>
         <obo:IAO_0000115>a RNA alternative state that results of the modification of the RNA by a physical effector sucha as light or termperature</obo:IAO_0000115>
         <rdfs:label xml:lang="en">RNA modified by physical effector</rdfs:label>
     </owl:Class>
@@ -4292,10 +4280,169 @@ COB_0000080</obo:IAO_0000119>
     <!-- http://purl.obolibrary.org/obo/OBAGER_0000227 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000227">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000155"/>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000155"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000230"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000233"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000129"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SO_0000139"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000155"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000230"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000233"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000171"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000196"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <obo:IAO_0000115>a complex of molecular entities formed by a sRNA and an RNA fragment in some macromolecular regulator structural state.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">sRNA bound to sRNA regulatory binding site</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBAGER_0000229 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000229">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000158"/>
+        <obo:IAO_0000115>an alternative state of a transcription factor (TF) characterized by molecular configurations or modifications that affect the TF activity, stability, or interactions, thereby affecting its regulatory activity on gene expression</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">TF structural state</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBAGER_0000230 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000230">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000158"/>
+        <obo:IAO_0000115>an alternative state of a sRNA characterized by molecular configurations or modifications that affect the sRNA activity, stability, or interactions, thereby affecting its regulatory activity on gene expression</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">sRNA structural state</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBAGER_0000231 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000231">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000230"/>
+        <obo:IAO_0000115>a structural state in which the sRNA has not undergone post-transcriptional modifications that alter its regulatory capacity, i. e., it&apos;s functional as primary transcript.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">unmodified sRNA</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBAGER_0000232 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000232">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000230"/>
+        <obo:IAO_0000115>the state of a sRNA after being modified by an effector</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">modified sRNA</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBAGER_0000233 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000233">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000049"/>
+        <obo:IAO_0000115>an RNA segment where a sRNA specifically binds and regulates translation</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">sRNA regulatory binding site</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SO_0000139 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SO_0000139">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000049"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000214"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000196"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Region in mRNA where ribosome assembles.</obo:IAO_0000115>
+        <oboInOwl:hasBroadSynonym>INSDC_feature:regulatory</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasExactSynonym>INSDC_qualifier:ribosome_binding_site</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>ribosome entry site</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>sequence</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>SO:0000139</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/so#SOFA"/>
+        <rdfs:label>ribosome_entry_site</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SO_0000139"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Region in mRNA where ribosome assembles.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>SO:ke</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SO_0000552 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SO_0000552">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000040"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000104"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000213"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000196"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000139"/>
+        <obo:IAO_0000115>A region in the 5&apos; UTR that pairs with the 16S rRNA during formation of the preinitiation complex.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>http://en.wikipedia.org/wiki/Shine-Dalgarno_sequence</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>Shine Dalgarno sequence</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Shine-Dalgarno sequence</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>five prime ribosome binding site</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>sequence</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>RBS</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>SO:0000552</oboInOwl:id>
+        <rdfs:comment>Not found in Eukaryotic sequence.</rdfs:comment>
+        <rdfs:label>Shine_Dalgarno_sequence</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SO_0000552"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A region in the 5&apos; UTR that pairs with the 16S rRNA during formation of the preinitiation complex.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>SO:jh</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SO_0000552"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>http://en.wikipedia.org/wiki/Shine-Dalgarno_sequence</owl:annotatedTarget>
+        <rdfs:label>wiki</rdfs:label>
+    </owl:Axiom>
     
 
 

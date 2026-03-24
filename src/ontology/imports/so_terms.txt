@@ -1,3 +1,5 @@
+http://purl.obolibrary.org/obo/SO_0000552 #Shine_Dalgarno_sequence
+http://purl.obolibrary.org/obo/SO_0000139 #ribosome_entry_site
 #http://purl.obolibrary.org/obo/SO_0001030 # forward
 #http://purl.obolibrary.org/obo/SO_0001031 # reverse
 #http://purl.obolibrary.org/obo/SO_0002301 # transcription unit
@@ -9,4 +11,5 @@
 #http://purl.obolibrary.org/obo/SO_0001913 # bacterial_RNApol_promoter_sigma_ecf_element
 #http://purl.obolibrary.org/obo/SO_0001671 # bacterial_RNApol_promoter_sigma_70_element
 #http://purl.obolibrary.org/obo/SO_0001672 # bacterial_RNApol_promoter_sigma54_element
+
 
