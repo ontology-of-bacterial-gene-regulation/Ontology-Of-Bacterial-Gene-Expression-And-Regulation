@@ -618,6 +618,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     <!-- http://purl.obolibrary.org/obo/OBAGER_00000208 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBAGER_00000208">
+        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000239"/>
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000092"/>
         <obo:IAO_0000115>X enables expression of Y if and only if Y is an expressed segment and X is a material object whose presence is required for Y to be transcribed or translated in canonical gene expression contexts.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">enables expression of</rdfs:label>
@@ -824,7 +825,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     <!-- http://purl.obolibrary.org/obo/OBAGER_0000122 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000122">
-        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000214"/>
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000240"/>
         <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000212"/>
         <obo:IAO_0000115>the inverse of directs initiation of transcription of</obo:IAO_0000115>
         <owlready_ontology:python_name>OBAGER_0000122</owlready_ontology:python_name>
@@ -836,7 +837,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     <!-- http://purl.obolibrary.org/obo/OBAGER_0000123 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000123">
-        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000214"/>
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000240"/>
         <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000125"/>
         <obo:IAO_0000115>a relationship that holds between a transcription unit and the terminator that ends its transcription</obo:IAO_0000115>
         <owlready_ontology:python_name>OBAGER_0000123</owlready_ontology:python_name>
@@ -1006,6 +1007,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000209">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_00000208"/>
+        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000240"/>
         <obo:IAO_0000115>X enables transcription of Y if and only if Y is an expressed segment and X is a material object whose presence is required for Y to be transcribed in canonical gene expression contexts.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">enables transcription of</rdfs:label>
     </owl:ObjectProperty>
@@ -1038,6 +1040,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000213">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000214"/>
+        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000242"/>
         <obo:IAO_0000115>X locates initiation of translation of Y if and only if X is a molecular entity and Y is a conding sequence, and the presence of X is required for translation of Y to initiate at a specific genomic location under canonical biological conditions.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">locates initiation of translation of</rdfs:label>
     </owl:ObjectProperty>
@@ -1048,6 +1051,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000214">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_00000208"/>
+        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000241"/>
         <obo:IAO_0000115>X enables transaltion of Y if and only if Y is an expressed segment and X is a material object whose presence is required for Y to be translated in canonical gene expression contexts.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">enables translation of</rdfs:label>
     </owl:ObjectProperty>
@@ -1068,6 +1072,45 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000236">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000135"/>
         <rdfs:label xml:lang="en">has stability regulated by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBAGER_0000239 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000239">
+        <obo:IAO_0000115>the inverse of enables expression of</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">has expression enabled by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBAGER_0000240 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000240">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000239"/>
+        <obo:IAO_0000115>the inverse of enables transcription of</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">has transcription enabled by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBAGER_0000241 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000241">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000239"/>
+        <obo:IAO_0000115>the inverse of enables translation of</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">has translation enabled by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBAGER_0000242 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000242">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000241"/>
+        <obo:IAO_0000115>the inverse of locates initiation of translation of</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">has translation initiation located by</rdfs:label>
     </owl:ObjectProperty>
     
 
