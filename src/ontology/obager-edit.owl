@@ -2972,6 +2972,12 @@ COB_0000013</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000106">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000058"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000214"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000196"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:OBAGER_0000033>an RNA molecule that binds an amin acid to its 3&apos; end and, by means of its anti-codon region, takes it to complementary codon in the mRNA that is being translated by the ribosome</obo:OBAGER_0000033>
         <obo:OBAGER_0000033>tRNA</obo:OBAGER_0000033>
         <rdfs:label xml:lang="en">transfer RNA</rdfs:label>
@@ -2983,6 +2989,12 @@ COB_0000013</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000107">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000058"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000214"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000196"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:OBAGER_0000033>an RNA molecule that is part of the ribosome</obo:OBAGER_0000033>
         <obo:OBAGER_0000033>rRNA</obo:OBAGER_0000033>
         <rdfs:label xml:lang="en">ribosomal RNA</rdfs:label>
@@ -4115,7 +4127,25 @@ COB_0000013</obo:IAO_0000119>
     <!-- http://purl.obolibrary.org/obo/OBAGER_0000217 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000217">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000060"/>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000060"/>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000171"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000196"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000235"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000101"/>
+                            </owl:Restriction>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000218"/>
         <obo:IAO_0000115>a cis-acting regulator that regulates gene expression after the transcription unit is transcribed into an mRNA molecule</obo:IAO_0000115>
         <rdfs:label xml:lang="en">cis-acting postranscriptional regulator</rdfs:label>
@@ -4332,6 +4362,18 @@ COB_0000013</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000233">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000049"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000010"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000108"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000171"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000196"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>an RNA segment where a sRNA specifically binds and regulates translation</obo:IAO_0000115>
         <rdfs:label xml:lang="en">sRNA regulatory binding site</rdfs:label>
     </owl:Class>
