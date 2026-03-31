@@ -1050,7 +1050,6 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_00000208"/>
         <obo:IAO_0000115>X enables transaltion of Y if and only if Y is an expressed segment and X is a material object whose presence is required for Y to be translated in canonical gene expression contexts.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">enables translation of</rdfs:label>
-        <rdfs:label xml:lang="en">has expression enabled by</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -2578,7 +2577,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <obo:IAO_0000115>a genomically specified regulator that is a molecule that is the product of trascription or translation, or that is formed by more than one gene products</obo:IAO_0000115>
+        <obo:IAO_0000115>a regulator that is an independent molecule that increases or decreases the activity of a molecule or the expression of a specific set of genes</obo:IAO_0000115>
         <rdfs:comment>Although the classification under this class is defined by the precise points of regulation, evidence for the regulatory activity might be the observation of the increase or decrease of the gene product, therefore, the regulated entity in the formal definition is not limited to the specific one for the gene expression phase, but it is generalized to a nucleotide sequence. For example, in the case of TF, the direct regulated entity is the promoter, but, in RegulonDB can be found these kind of regulators that are not associated to a promoter, but to a regulated transcription unit or gene.</rdfs:comment>
         <rdfs:label xml:lang="en">trans-acting regulator</rdfs:label>
     </owl:Class>
@@ -2951,43 +2950,13 @@ COB_0000013</obo:IAO_0000119>
     <!-- http://purl.obolibrary.org/obo/OBAGER_0000108 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000108">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000046"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000013"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000091"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000233"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000134"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000185"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000046"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000013"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000091"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000233"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000171"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000196"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000098"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000046"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000013"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>a short RNA molecule, 100-200 nt long, that regulate gene expression</obo:IAO_0000115>
         <obo:IAO_0000119>PMID:32213244</obo:IAO_0000119>
         <obo:OBAGER_0000033>sRNA</obo:OBAGER_0000033>
@@ -3417,8 +3386,7 @@ COB_0000013</obo:IAO_0000119>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000155">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000176"/>
         <obo:IAO_0000115>A complex of two or more molecular entities that are not covalently bound.</obo:IAO_0000115>
-        <obo:IAO_0000119>COB
-COB_0000080</obo:IAO_0000119>
+        <obo:IAO_0000119>COB_0000080</obo:IAO_0000119>
         <rdfs:label xml:lang="en">complex of molecular entities</rdfs:label>
     </owl:Class>
     
@@ -3461,7 +3429,7 @@ COB_0000080</obo:IAO_0000119>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000032"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000108"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>an alternative state of molecular entity characterized by molecular configurations or modifications that affect a macromolecular regulator&apos;s activity, stability, or interactions, thereby affecting its regulatory activity on gene expression</obo:IAO_0000115>
@@ -3528,7 +3496,7 @@ COB_0000080</obo:IAO_0000119>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000155"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000238"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
                         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000034"/>
@@ -3547,7 +3515,7 @@ COB_0000080</obo:IAO_0000119>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000155"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000238"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
                         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000034"/>
@@ -3566,7 +3534,7 @@ COB_0000080</obo:IAO_0000119>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000155"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000238"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
                         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000034"/>
@@ -3582,7 +3550,7 @@ COB_0000080</obo:IAO_0000119>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <obo:IAO_0000115>a complex of molecular entities formed by a transcription factor, a DNA fragment, and, optionally, a molecular effector, depending on the functional conformation of the complex.</obo:IAO_0000115>
+        <obo:IAO_0000115>a regulatory molecular complex formed by a transcription factor, a DNA fragment, and, optionally, a molecular effector, depending on the functional conformation of the complex.</obo:IAO_0000115>
         <rdfs:comment>The complex of the TF with the TFRS directly regulates the activity of a promoter and, thereby, it regulates the expression of TUs and genes. This fact is reflected in three &apos;regulatory&apos; axioms, with wich we want to represent the fact that there are experiments that can observe the regulatory effects of this entity at different levels of the expression process.</rdfs:comment>
         <rdfs:label xml:lang="en">TF bound to TFRS</rdfs:label>
     </owl:Class>
@@ -3671,7 +3639,6 @@ COB_0000080</obo:IAO_0000119>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000178"/>
-        <obo:IAO_0000115>a gene product</obo:IAO_0000115>
         <obo:IAO_0000115>a gene product produced by the union of more than one simple gene product</obo:IAO_0000115>
         <rdfs:label xml:lang="en">complex gene product</rdfs:label>
     </owl:Class>
@@ -3944,8 +3911,8 @@ COB_0000080</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000201">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000051"/>
-        <obo:IAO_0000115>-24 promoter consensus sequence</obo:IAO_0000115>
         <obo:IAO_0000115>A promoter motif recognized by the σ⁵⁴ factor, typically located around 24 base pairs upstream of the TSS (+1).</obo:IAO_0000115>
+        <obo:OBAGER_0000033 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">-24 promoter consensus sequence</obo:OBAGER_0000033>
         <rdfs:label xml:lang="en">-24 promoter motif</rdfs:label>
     </owl:Class>
     
@@ -4231,7 +4198,7 @@ COB_0000080</obo:IAO_0000119>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000155"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000238"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
                         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000230"/>
@@ -4250,7 +4217,7 @@ COB_0000080</obo:IAO_0000119>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000155"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000238"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
                         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000230"/>
@@ -4266,7 +4233,7 @@ COB_0000080</obo:IAO_0000119>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <obo:IAO_0000115>a complex of molecular entities formed by a sRNA and an RNA fragment in some macromolecular regulator structural state.</obo:IAO_0000115>
+        <obo:IAO_0000115>a regulatory molecular complex formed by a sRNA and an RNA fragment in some macromolecular regulator structural state.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">sRNA bound to sRNA regulatory binding site</rdfs:label>
     </owl:Class>
     
@@ -4296,6 +4263,12 @@ COB_0000080</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000231">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000230"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000169"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000138"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>a structural state in which the sRNA has not undergone post-transcriptional modifications that alter its regulatory capacity, i. e., it&apos;s functional as primary transcript.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">unmodified sRNA</rdfs:label>
     </owl:Class>
@@ -4318,6 +4291,16 @@ COB_0000080</obo:IAO_0000119>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000049"/>
         <obo:IAO_0000115>an RNA segment where a sRNA specifically binds and regulates translation</obo:IAO_0000115>
         <rdfs:label xml:lang="en">sRNA regulatory binding site</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBAGER_0000238 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000238">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000155"/>
+        <obo:IAO_0000115>A complex of molecular entities whose components jointly participate in a mechanism that regulates expression of a nucleotide segment.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">regulatory molecular complex</rdfs:label>
     </owl:Class>
     
 
