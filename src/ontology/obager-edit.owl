@@ -1258,8 +1258,8 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
         <obo:IAO_0000115>A relationship that holds between two entities in which the processes executed by the two entities are causally connected.</obo:IAO_0000115>
-        <obo:IAO_0000116>This relation and all sub-relations can be applied to either (1) pairs of entities that are interacting at any moment of time (2) populations or species of entity whose members have the disposition to interact (3) classes whose members have the disposition to interact.</obo:IAO_0000116>
         <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">Considering relabeling as &apos;pairwise interacts with&apos;</obo:IAO_0000116>
+        <obo:IAO_0000116>This relation and all sub-relations can be applied to either (1) pairs of entities that are interacting at any moment of time (2) populations or species of entity whose members have the disposition to interact (3) classes whose members have the disposition to interact.</obo:IAO_0000116>
         <obo:IAO_0000117 rdf:resource="https://orcid.org/0000-0002-6601-2165"/>
         <obo:IAO_0000232>Note that this relationship type, and sub-relationship types may be redundant with process terms from other ontologies. For example, the symbiotic relationship hierarchy parallels GO. The relations are provided as a convenient shortcut. Consider using the more expressive processual form to capture your data. In the future, these relations will be linked to their cognate processes through rules.</obo:IAO_0000232>
         <oboInOwl:hasExactSynonym>in pairwise interaction with</oboInOwl:hasExactSynonym>
@@ -2613,15 +2613,22 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000077"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000091"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000050"/>
-                    </owl:Restriction>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000091"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000050"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002436"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000220"/>
+                            </owl:Restriction>
+                        </owl:unionOf>
+                    </owl:Class>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <obo:IAO_0000115>a regulator that is an independent molecule that increases or decreases the activity of a molecule or the expression of a specific set of genes</obo:IAO_0000115>
-        <rdfs:comment>Although the classification under this class is defined by the precise points of regulation, evidence for the regulatory activity might be the observation of the increase or decrease of the gene product, therefore, the regulated entity in the formal definition is not limited to the specific one for the gene expression phase, but it is generalized to a nucleotide sequence. For example, in the case of TF, the direct regulated entity is the promoter, but, in RegulonDB can be found these kind of regulators that are not associated to a promoter, but to a regulated transcription unit or gene.</rdfs:comment>
+        <obo:IAO_0000115>A regulator that is a biomacromolecule capable of physically interacting with one or more target biomacromolecules, distinct from its origin, to functionally regulate their activity or expression.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">trans-acting regulator</rdfs:label>
     </owl:Class>
     
@@ -2748,14 +2755,6 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000084"/>
-                    <owl:Class>
-                        <owl:complementOf>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000091"/>
-                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000004"/>
-                            </owl:Restriction>
-                        </owl:complementOf>
-                    </owl:Class>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002436"/>
                         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000008"/>
@@ -2763,9 +2762,8 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <obo:IAO_0000115>a regulatory protein of transcription initiation that regulates transcription initiation by interacting with the RNA polymerase holoenzyme and whose specificity is not determined directly by the recognition of specific a DNA sequence</obo:IAO_0000115>
+        <obo:IAO_0000115>a regulator of transcription initiation that regulates transcription initiation by interacting with the RNA polymerase holoenzyme in a specifc subset of promoters</obo:IAO_0000115>
         <obo:IAO_0000119>PMID:32665585</obo:IAO_0000119>
-        <rdfs:comment>Using a negation in formal definitions requires the assertion of negative facts in the whole ontology, because the lack of a positive assertion does not imply the negative assertion (OWA). In this particular case, the definition implies that RNAP-centered regulatory protein is a disjoint class with DNA-binding regulatory protein of transcription initiation, i. e., RNAP-centered regulatory proteins do not regulate transcription initiation in any case by recognizing a DNA sequence.</rdfs:comment>
         <rdfs:label xml:lang="en">RNAP-centered regulator of transcription initiation</rdfs:label>
     </owl:Class>
     
@@ -3012,13 +3010,13 @@ COB_0000013</obo:IAO_0000119>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000013"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>a short RNA molecule, 100-200 nt long, that regulate gene expression</obo:IAO_0000115>
+        <obo:IAO_0000115>a short RNA molecule, 100-200 nt long</obo:IAO_0000115>
         <obo:IAO_0000119>PMID:32213244</obo:IAO_0000119>
         <obo:OBAGER_0000033>sRNA</obo:OBAGER_0000033>
         <rdfs:comment>Some sRNA are carried in the genome as sRNA-only transcription units, but some other are transcribed as part of an mRNA, and they are produced by cleavage in a process called maturation.</rdfs:comment>
-        <rdfs:comment>Some sRNA require a protein cofactor to function. Currently in RegulonDB, there are included RNAs whose cofactors are RNA-binding protein Hfq, ATP-dependent RNA helicase DeaD or ribonuclease E.</rdfs:comment>
+        <rdfs:comment>Some sRNA require a protein cofactor to function. Currently RegulonDB includes sRNAs whose cofactors are RNA-binding protein Hfq, ATP-dependent RNA helicase DeaD or ribonuclease E.</rdfs:comment>
         <rdfs:comment>sRNA regulate gene expression through different mechanisms. Currently in RegulonDB, there are sRNA that act by translation-blocking and mRNA degradation.</rdfs:comment>
-        <rdfs:comment>sRNAs are not necessarily non-coding. Some sRNA are also mRNA, for example, SgrS encode the 38 amin acid protein SgrT.</rdfs:comment>
+        <rdfs:comment>sRNAs are not necessarily non-coding. Some sRNA are also mRNA, for example, SgrS encodes the 38 amino acid protein SgrT.</rdfs:comment>
         <rdfs:label xml:lang="en">small RNA</rdfs:label>
     </owl:Class>
     
@@ -3172,7 +3170,7 @@ COB_0000013</obo:IAO_0000119>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000080"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000077"/>
         <obo:IAO_0000119>a continuant that produces a change in a molecular entity and modifies its activity and/or specificity</obo:IAO_0000119>
         <rdfs:label xml:lang="en">effector</rdfs:label>
     </owl:Class>
@@ -4390,6 +4388,22 @@ COB_0000013</obo:IAO_0000119>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OBAGER_0000244 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000244">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000108"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000038"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000220"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>a small RNA that regulates gene expression</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">small regulatory RNA</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/SO_0000139 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SO_0000139">
@@ -4508,5 +4522,5 @@ COB_0000013</obo:IAO_0000119>
 
 
 
-<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
 
