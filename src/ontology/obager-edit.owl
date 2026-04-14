@@ -1929,12 +1929,12 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000073"/>
                         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                        <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000086"/>
+                        <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000221"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000073"/>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002436"/>
                         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                        <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000221"/>
+                        <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000086"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -2716,23 +2716,16 @@ A genomically specified regulator that is a molecule that is the product of tran
                         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000001"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000209"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000185"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000075"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000091"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000001"/>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000173"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000002"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000212"/>
                         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000002"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002436"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000221"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -2753,10 +2746,18 @@ A genomically specified regulator that is a molecule that is the product of tran
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000084"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002436"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000008"/>
-                    </owl:Restriction>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002436"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000008"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002436"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000221"/>
+                            </owl:Restriction>
+                        </owl:unionOf>
+                    </owl:Class>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
@@ -3446,7 +3447,7 @@ However, from an ontological perspective, regulatory properties cannot be treate
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000158">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000170"/>
         <obo:IAO_0000115>an alternative state of molecular entity characterized by molecular configurations or modifications that affect a macromolecular regulator&apos;s activity, stability, or interactions, thereby affecting its regulatory activity on gene expression</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">macromolecular regulator structural state</rdfs:label>
+        <rdfs:label xml:lang="en">biomacromolecular regulator structural state</rdfs:label>
     </owl:Class>
     
 
@@ -3760,7 +3761,7 @@ However, from an ontological perspective, regulatory properties cannot be treate
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000187">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000193"/>
         <obo:IAO_0000115>A macromolecular regulator functional disposition that is realized independently of any effector binding or covalent modification. In this case, the regulator’s ability to bind its target DNA and modulate transcription is governed solely by its expression level, such that the disposition is constitutively realizable whenever the regulator is present.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">constitutively active macromolecular regulator</rdfs:label>
+        <rdfs:label xml:lang="en">constitutively active biomacromolecular regulator</rdfs:label>
     </owl:Class>
     
 
@@ -3801,7 +3802,7 @@ However, from an ontological perspective, regulatory properties cannot be treate
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000191">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000195"/>
         <obo:IAO_0000115>A conditionally active macromolecular regulator functional disposition that is currently realized; that is, the TF is in a molecular state that enables it to bind its target nucleotide site and modulate transcription or translation.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">macromolecular regulator active state</rdfs:label>
+        <rdfs:label xml:lang="en">biomacromolecular regulator active state</rdfs:label>
     </owl:Class>
     
 
@@ -3811,7 +3812,7 @@ However, from an ontological perspective, regulatory properties cannot be treate
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000192">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000195"/>
         <obo:IAO_0000115>A conditionally active macromolecular regulator functional disposition that is currently not realized due to the absence of necessary enabling conditions, such as lack of effector binding, absence of covalent modification, or sequestration by another molecule.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">macromolecular regulator inactive state</rdfs:label>
+        <rdfs:label xml:lang="en">biomacromolecular regulator inactive state</rdfs:label>
     </owl:Class>
     
 
@@ -3820,7 +3821,7 @@ However, from an ontological perspective, regulatory properties cannot be treate
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000193">
         <obo:IAO_0000115>A realizable property that inheres in a macromolecular regulator, TF or small RNA, by means of which the macromolecular regulator is capable of regulating gene expression under appropriate conditions. The realization of this disposition occurs when the regulator binds its target nucleotide site and modulates transcription or translation.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">macromolecular regulator functional disposition</rdfs:label>
+        <rdfs:label xml:lang="en">biomacromolecular regulator functional disposition</rdfs:label>
     </owl:Class>
     
 
@@ -3830,7 +3831,7 @@ However, from an ontological perspective, regulatory properties cannot be treate
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000195">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000193"/>
         <obo:IAO_0000115>A macromolecular regulator functional disposition that is realized only under specific conditions, such as the binding of an effector molecule, a covalent modification, or the presence of particular environmental signals. The disposition enables the regulator to control gene expression by binding to its nucleotide site target and modulating transcription or translation, but this realization is contingent on context-dependent molecular or environmental triggers.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">conditionally active macromolecular regulator</rdfs:label>
+        <rdfs:label xml:lang="en">conditionally active biomacromolecular regulator</rdfs:label>
     </owl:Class>
     
 
@@ -4211,7 +4212,7 @@ However, from an ontological perspective, regulatory properties cannot be treate
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:label xml:lang="en">macromolecular regulator</rdfs:label>
+        <rdfs:label xml:lang="en">biomacromolecular regulator</rdfs:label>
     </owl:Class>
     
 
