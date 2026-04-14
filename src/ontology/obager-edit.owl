@@ -2385,6 +2385,12 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000055">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000097"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000048"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000196"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A naturally occurring chain of amino acids linked by peptide bonds and synthesized at the ribosome from a single continuous sequence.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">polypeptide chain</rdfs:label>
     </owl:Class>
