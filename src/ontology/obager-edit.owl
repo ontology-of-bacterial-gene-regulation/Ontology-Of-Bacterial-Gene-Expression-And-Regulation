@@ -2615,18 +2615,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000077"/>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000091"/>
-                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000050"/>
-                            </owl:Restriction>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002436"/>
-                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000220"/>
-                            </owl:Restriction>
-                        </owl:unionOf>
-                    </owl:Class>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000178"/>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
