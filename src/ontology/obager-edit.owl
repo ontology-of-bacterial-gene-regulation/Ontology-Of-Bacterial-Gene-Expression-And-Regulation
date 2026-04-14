@@ -610,7 +610,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000092"/>
         <obo:IAO_0000115>a relationship that holds between a nucleotide region and a molecule, whereby they bind in a specific manner</obo:IAO_0000115>
         <owlready_ontology:python_name>OBAGER_0000010</owlready_ontology:python_name>
-        <rdfs:label xml:lang="en">is recognized by</rdfs:label>
+        <rdfs:label xml:lang="en">sequence recognized by</rdfs:label>
     </owl:ObjectProperty>
     
 
