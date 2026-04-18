@@ -851,7 +851,6 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000209"/>
         <obo:IAO_0000115>a relationshipt that holds between a terminator and the transcription unit whose transcription it ends</obo:IAO_0000115>
         <owlready_ontology:python_name>OBAGER_0000125</owlready_ontology:python_name>
-        <rdfs:comment>TO DO: change label to &quot;locates initiation of transcription of&quot; and it is not a subproperty of regulates.</rdfs:comment>
         <rdfs:label xml:lang="en">terminates transcription of</rdfs:label>
     </owl:ObjectProperty>
     
