@@ -1697,11 +1697,11 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
                         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000002"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000209"/>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000212"/>
                         <owl:someValuesFrom>
                             <owl:Class>
                                 <owl:intersectionOf rdf:parseType="Collection">
-                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000185"/>
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000002"/>
                                     <owl:Restriction>
                                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000175"/>
                                         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
@@ -1712,11 +1712,11 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
                         </owl:someValuesFrom>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000209"/>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000212"/>
                         <owl:allValuesFrom>
                             <owl:Class>
                                 <owl:intersectionOf rdf:parseType="Collection">
-                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000185"/>
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000002"/>
                                     <owl:Restriction>
                                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000175"/>
                                         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
@@ -1744,7 +1744,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
                     </owl:Class>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000173"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000002"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000031"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000211"/>
@@ -1794,14 +1794,14 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
                     </owl:Class>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000173"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000002"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000185"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000212"/>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000209"/>
                         <owl:someValuesFrom>
                             <owl:Class>
                                 <owl:intersectionOf rdf:parseType="Collection">
-                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000002"/>
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000185"/>
                                     <owl:Restriction>
                                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000175"/>
                                         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
@@ -1812,11 +1812,11 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
                         </owl:someValuesFrom>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000212"/>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000209"/>
                         <owl:allValuesFrom>
                             <owl:Class>
                                 <owl:intersectionOf rdf:parseType="Collection">
-                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000002"/>
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000185"/>
                                     <owl:Restriction>
                                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000175"/>
                                         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
@@ -3112,7 +3112,7 @@ However, from an ontological perspective, regulatory properties cannot be treate
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000077"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>A regulon is a set of units of expression that may be scattered throughout the genome, and whose expression is co-regulated by the same diffusible regulatory factor (trans-acting regulator or small molecular regulator). This regulation occurs through a unitary mechanistic process involving specificity, either via direct binding of the regulator to a nucleotide segment or through direct modulation of the binding affinity of RNA polymerase or the ribosome to such segments.</obo:IAO_0000115>
+        <obo:IAO_0000115>A regulon is a set of units of expression that may be scattered throughout the genome, and whose expression is co-regulated by the same diffusible regulator (trans-acting regulator or small molecular regulator). Whatever the nature of the regulator, it acts in a unitary fashion and it involves specificity, either via direct binding of the regulator to a nucleotide segment or through direct modulation of the binding affinity of RNA polymerase or the ribosome to such segments.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">regulon</rdfs:label>
     </owl:Class>
     
