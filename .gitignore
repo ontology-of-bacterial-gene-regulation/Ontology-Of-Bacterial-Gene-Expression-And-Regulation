@@ -5,3 +5,5 @@ src/ontology/prok.obo
 src/ontology/prok.owl
 semantic.cache
 bin/
+
+src/.DS_Store
