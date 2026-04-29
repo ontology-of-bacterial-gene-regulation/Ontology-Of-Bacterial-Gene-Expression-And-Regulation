@@ -2377,7 +2377,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
                 <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000049"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>An extent of RNA greater than zero nucleotide.</obo:IAO_0000115>
+        <obo:IAO_0000115>An extent of RNA greater than zero nucleotides.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">RNA segment</rdfs:label>
     </owl:Class>
     
