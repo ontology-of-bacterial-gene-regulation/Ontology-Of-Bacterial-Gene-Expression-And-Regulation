@@ -2850,7 +2850,7 @@ COB_0000013</obo:IAO_0000119>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000045"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000185"/>
-        <obo:IAO_0000115>A set of adjacent genes whose transcription is coordinated by one or several mutually overlapping transcription units that are transcribed in the same direction and share at least one gene.</obo:IAO_0000115>
+        <obo:IAO_0000115>A set of adjacent genes whose transcription is coordinated by either one transcription unit (simple operon), or several mutually overlapping transcription units transcribed in the same direction and sharing at least one gene (complex operon).</obo:IAO_0000115>
         <obo:IAO_0000119>PMID: ﻿32665585</obo:IAO_0000119>
         <rdfs:comment>On the RegulonDB website, the operon region begins at the most upstream regulatory site and ends at the transcription termination site of the last transcription unit (TU), and includes internal TFRSs and promoters. Thus, operon regions summarize all available information for maximal sets of overlapping TUs.
 
@@ -3073,7 +3073,7 @@ However, from an ontological perspective, regulatory properties cannot be treate
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000094"/>
-        <obo:IAO_0000115>an operon whose transcription is coordinated from a single transcription unit</obo:IAO_0000115>
+        <obo:IAO_0000115>A set of adjacent genes whose transcription is coordinated by one transcription unit; by extension, a gene transcribed by a monocistronic transcription unit is considered as a single-gene operon.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">simple operon</rdfs:label>
     </owl:Class>
     
@@ -3090,7 +3090,7 @@ However, from an ontological perspective, regulatory properties cannot be treate
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000094"/>
-        <obo:IAO_0000115>an operon whose transcription is coordinated through several mutually overlapping transcription units that are transcribed in the same direction and share at least one gene</obo:IAO_0000115>
+        <obo:IAO_0000115>A set of adjacent genes whose transcription is coordinated through several mutually overlapping transcription units that are transcribed in the same direction and share at least one gene.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">complex operon</rdfs:label>
     </owl:Class>
     
