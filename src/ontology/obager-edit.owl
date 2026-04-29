@@ -2270,6 +2270,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         </owl:equivalentClass>
         <obo:IAO_0000115>a TFBS that is involved in transcription regulation</obo:IAO_0000115>
         <obo:OBAGER_0000033>TFRS</obo:OBAGER_0000033>
+        <obo:OBAGER_0000033>operator</obo:OBAGER_0000033>
         <rdfs:comment>The definition of transcription factor requires that these bound &quot;near&quot; the promoter. This is clearly a site property, but we have to define the meaning of &quot;near&quot; and/or of the complex TF bound to TFRS.</rdfs:comment>
         <rdfs:comment>Transcription factor regulatory sites (TFRSs) directly regulate promoter activity, but observations of increased or decreased expression of a DNA segment also provide evidence of the regulatory activity of the site.</rdfs:comment>
         <rdfs:label xml:lang="en">transcription factor regulatory site</rdfs:label>
