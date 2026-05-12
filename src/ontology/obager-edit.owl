@@ -1113,6 +1113,46 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OBAGER_0000245 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000245">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000173"/>
+        <obo:IAO_0000115>X positively regulates transcription of Y iff X regulates transcription of Y and the modulation brings about an increase in the rate of production of a transcript.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">positively regulates transcription of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBAGER_0000246 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000246">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000173"/>
+        <obo:IAO_0000115>X negatively regulates transcription of Y iff X regulates transcription of Y and the modulation brings about a decrease in the rate of production of a transcript.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">negatively regulates transcription of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBAGER_0000247 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000247">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000171"/>
+        <obo:IAO_0000115>X positively regulates translation of Y iff X regulates translation of Y and the modulation brings about an increase in the rate of production of a polypeptide.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">positively regulates translation of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBAGER_0000248 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000248">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000171"/>
+        <obo:IAO_0000115>X negatively regulates translation of Y iff X regulates translation of Y and the modulation brings about a decrease in the rate of production of a polypeptide.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">negatively regulates translation of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/RO_0000057 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000057">
