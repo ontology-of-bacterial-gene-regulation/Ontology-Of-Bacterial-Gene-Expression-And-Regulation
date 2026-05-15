@@ -3817,7 +3817,7 @@ However, from an ontological perspective, regulatory properties cannot be treate
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000187">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000193"/>
-        <obo:IAO_0000115>A macromolecular regulator functional disposition that is realized independently of any effector binding or covalent modification. In this case, the regulator’s ability to bind its target DNA and modulate transcription is governed solely by its expression level, such that the disposition is constitutively realizable whenever the regulator is present.</obo:IAO_0000115>
+        <obo:IAO_0000115>A macromolecular regulator functional disposition that is realized independently of any effector binding or covalent modification. In this case, the regulator’s ability to bind its target DNA and modulate transcription is governed solely by its expression level, such that the disposition is constitutively realizable whenever the regulator is present, and the regulator do not have a known effector that represses its activity.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">constitutively active biomacromolecular regulator</rdfs:label>
     </owl:Class>
     
