@@ -238,6 +238,7 @@ We also have the outstanding issue of how to aim different definitions to differ
 Label: has plasma membrane part
 Annotations: IAO_0000424 &quot;http://purl.obolibrary.org/obo/BFO_0000051 some (http://purl.org/obo/owl/GO#GO_0005886 and http://purl.obolibrary.org/obo/BFO_0000051 some ?Y)&quot;
 </obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A macro expansion tag applied to an object property (or possibly a data property)  which can be used by a macro-expansion engine to generate more complex expressions from simpler ones</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="en">A macro expansion tag applied to an object property (or possibly a data property) which can be used by a macro-expansion engine to generate more complex expressions from simpler ones</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Chris Mungall</obo:IAO_0000117>
         <rdfs:label xml:lang="en">expand expression to</rdfs:label>
@@ -1153,6 +1154,103 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OBAGER_0000261 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000261">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+        <obo:IAO_0000115>A relation between a regulatory interaction and an entity that participates in the interaction by influencing the activity of a regulator or expression-related component, or by affecting the expression of a nucleotide segment.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">has regulator</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBAGER_0000262 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000262">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000264"/>
+        <obo:IAO_0000115>A relation between a regulatory interaction and a participant that influences transcription initiation or transcription of a DNA segment in that interaction.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">has transcriptional regulator</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBAGER_0000263 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000263">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000261"/>
+        <obo:IAO_0000115>A relation between a regulatory interaction and a participant that influences the activity of a regulator or a basic expression machinery component in that interaction.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">has activity regulator</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBAGER_0000264 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000264">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000261"/>
+        <obo:IAO_0000115>A relation between a regulatory interaction and a participant that affects the production of a gene product in that interaction.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">has expression regulator</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBAGER_0000265 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000265">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000264"/>
+        <obo:IAO_0000115>A relation between a regulatory interaction and a participant that influences translation of an RNA segment in that interaction.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">has translational regulator</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBAGER_0000266 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000266">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+        <obo:IAO_0000115>A relation between a regulatory interaction and a participant whose activity, function, or expression is affected by a regulator in that interaction.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">has regulated entity</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBAGER_0000269 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000269">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002518"/>
+        <obo:IAO_0000115>A relation between a sequence and the sequence element occupying the first position in that sequence. Note that a sequence element is not decomposable in subsequences at the same granularity level. For example, one codon cannot be docomposed into codons.</obo:IAO_0000115>
+        <rdfs:comment>The properties has first sequence element and has last sequence element were introduced to represent the immediate boundary elements of a sequence. Although RO provides transitive sequence relations such as has start subsequence and has end sequence, transitive properties cannot be used together with cardinality restrictions intended to identify unique boundary elements. These properties therefore capture only the immediate first and last elements of a sequence and are not intended to propagate through nested subsequences.</rdfs:comment>
+        <rdfs:label xml:lang="en">has last sequence element</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBAGER_0000270 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000270">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002516"/>
+        <obo:IAO_0000115>A relation between a sequence and the sequence element occupying the first position in that sequence. Note that a sequence element is not decomposable in subsequences at the same granularity level, for example, one codon cannot be decomposed into codons.</obo:IAO_0000115>
+        <rdfs:comment>The properties has first sequence element and has last sequence element were introduced to represent the immediate boundary elements of a sequence. Although RO provides transitive sequence relations such as has start subsequence and has end sequence, transitive properties cannot be used together with cardinality restrictions intended to identify unique boundary elements. These properties therefore capture only the immediate first and last elements of a sequence and are not intended to propagate through nested subsequences.</rdfs:comment>
+        <rdfs:label xml:lang="en">has first sequence element</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0000056 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000056">
+        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+        <obo:IAO_0000111 xml:lang="en">participates in</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">this blood clot participates in this blood coagulation</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">this input material (or this output material) participates in this process</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">this investigator participates in this investigation</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">a relation between a continuant and a process, in which the continuant is somehow involved in the process</obo:IAO_0000115>
+        <obo:IAO_0000118 xml:lang="en">participates_in</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">participates in</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/RO_0000057 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000057">
@@ -1179,6 +1277,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002019">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002233"/>
         <obo:IAO_0000115>A relationship that holds between a receptor and an chemical entity, typically a small molecule or peptide, that carries information between cells or compartments of a cell and which binds the receptor and regulates its effector function.</obo:IAO_0000115>
+        <obo:IAO_0000115>A relationship that holds between between a receptor and an chemical entity, typically a small molecule or peptide, that carries information between cells or compartments of a cell and which binds the receptor and regulates its effector function.</obo:IAO_0000115>
         <oboInOwl:created_by rdf:resource="https://orcid.org/0000-0002-7073-9172"/>
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-07-19T17:30:36Z</oboInOwl:creation_date>
         <rdfs:label>has ligand</rdfs:label>
@@ -1344,6 +1443,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002516">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002524"/>
         <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002517"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
         <obo:IAO_0000112>Every CDS has as a start sequence the start codon for that transcript</obo:IAO_0000112>
         <obo:IAO_0000115>x has start sequence y if the start of x is identical to the start of y, and x has y as a subsequence</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:resource="https://orcid.org/0000-0002-6601-2165"/>
@@ -1360,6 +1460,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002517">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002525"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
         <obo:IAO_0000115>inverse of has start sequence</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:resource="https://orcid.org/0000-0002-6601-2165"/>
         <obo:IAO_0000118>starts</obo:IAO_0000118>
@@ -1377,6 +1478,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002518">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002524"/>
         <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002519"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
         <obo:IAO_0000112>Every CDS has as an end sequence the stop codon for that transcript (note this follows from the SO definition of CDS, in which stop codons are included)</obo:IAO_0000112>
         <obo:IAO_0000115>x has end sequence y if the end of x is identical to the end of y, and x has y as a subsequence</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:resource="https://orcid.org/0000-0002-6601-2165"/>
@@ -1393,6 +1495,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002519">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002525"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
         <obo:IAO_0000115>inverse of has end sequence</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:resource="https://orcid.org/0000-0002-6601-2165"/>
         <obo:IAO_0000118>ends</obo:IAO_0000118>
@@ -1751,21 +1854,6 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
                             </owl:Class>
                         </owl:someValuesFrom>
                     </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000212"/>
-                        <owl:allValuesFrom>
-                            <owl:Class>
-                                <owl:intersectionOf rdf:parseType="Collection">
-                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000002"/>
-                                    <owl:Restriction>
-                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000175"/>
-                                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                                        <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000011"/>
-                                    </owl:Restriction>
-                                </owl:intersectionOf>
-                            </owl:Class>
-                        </owl:allValuesFrom>
-                    </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
@@ -1800,21 +1888,6 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
                                 </owl:intersectionOf>
                             </owl:Class>
                         </owl:someValuesFrom>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000211"/>
-                        <owl:allValuesFrom>
-                            <owl:Class>
-                                <owl:intersectionOf rdf:parseType="Collection">
-                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000031"/>
-                                    <owl:Restriction>
-                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000175"/>
-                                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                                        <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000011"/>
-                                    </owl:Restriction>
-                                </owl:intersectionOf>
-                            </owl:Class>
-                        </owl:allValuesFrom>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -1851,21 +1924,6 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
                             </owl:Class>
                         </owl:someValuesFrom>
                     </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000209"/>
-                        <owl:allValuesFrom>
-                            <owl:Class>
-                                <owl:intersectionOf rdf:parseType="Collection">
-                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000185"/>
-                                    <owl:Restriction>
-                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000175"/>
-                                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                                        <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000011"/>
-                                    </owl:Restriction>
-                                </owl:intersectionOf>
-                            </owl:Class>
-                        </owl:allValuesFrom>
-                    </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
@@ -1884,12 +1942,12 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002516"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000031"/>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000269"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000062"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002518"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000062"/>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000270"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000031"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000122"/>
@@ -2358,12 +2416,12 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002516"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000184"/>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000269"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000183"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002518"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000183"/>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000270"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000184"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -3596,8 +3654,8 @@ However, from an ontological perspective, regulatory properties cannot be treate
                         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000229"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000134"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000185"/>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000173"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000002"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -3616,7 +3674,7 @@ However, from an ontological perspective, regulatory properties cannot be treate
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000173"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000002"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000185"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -3900,14 +3958,14 @@ However, from an ontological perspective, regulatory properties cannot be treate
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002516"/>
-                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                        <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000047"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002518"/>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000269"/>
                         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                         <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000069"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000270"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000047"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -3982,7 +4040,7 @@ However, from an ontological perspective, regulatory properties cannot be treate
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000201">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000051"/>
         <obo:IAO_0000115>A promoter motif recognized by the σ⁵⁴ factor, typically located around 24 base pairs upstream of the TSS (+1).</obo:IAO_0000115>
-        <obo:OBAGER_0000033 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">-24 promoter consensus sequence</obo:OBAGER_0000033>
+        <obo:OBAGER_0000033>-24 promoter consensus sequence</obo:OBAGER_0000033>
         <rdfs:label xml:lang="en">-24 promoter motif</rdfs:label>
     </owl:Class>
     
@@ -4097,24 +4155,24 @@ However, from an ontological perspective, regulatory properties cannot be treate
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
                             <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002516"/>
-                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000031"/>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000269"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000062"/>
                             </owl:Restriction>
                             <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002518"/>
-                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000062"/>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000270"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000031"/>
                             </owl:Restriction>
                         </owl:intersectionOf>
                     </owl:Class>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
                             <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002516"/>
-                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000047"/>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000269"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000069"/>
                             </owl:Restriction>
                             <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002518"/>
-                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000069"/>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000270"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000047"/>
                             </owl:Restriction>
                         </owl:intersectionOf>
                     </owl:Class>
@@ -4419,6 +4477,246 @@ However, from an ontological perspective, regulatory properties cannot be treate
         </rdfs:subClassOf>
         <obo:IAO_0000115>a small RNA that regulates gene expression</obo:IAO_0000115>
         <rdfs:label xml:lang="en">small regulatory RNA</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBAGER_0000250 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000250">
+        <obo:IAO_0000115>A biological relationship between two or more entities</obo:IAO_0000115>
+        <obo:IAO_0000119>BioPax</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">interaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBAGER_0000251 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000251">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000250"/>
+        <obo:IAO_0000115>An observedinteraction in which one entity influences the activity of a regulator or basic expression machinery component, or affects the expression of a unit of expression.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">regulatory interaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBAGER_0000252 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000252">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000261"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000075"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000266"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000185"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000251"/>
+        <obo:IAO_0000115>A regulatory interaction in which a protein and a gene have been identified as participants, and experimental evidence supports an effect of the protein on the expression of the gene, while the intermediate regulatory elements or mechanisms are unknown.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">protein - gene regulatory interaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBAGER_0000253 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000253">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000262"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000032"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000266"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000001"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000251"/>
+        <obo:IAO_0000115>A regulatory interaction in which a transcription factor and a promoter have been identified as participants, and experimental evidence supports a role of the transcription factor in regulating the activity of that promoter, although the specific transcription factor regulatory site or other mechanistic details are unknown.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">TF - promoter regulatory interaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBAGER_0000254 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000254">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000262"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000032"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000266"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000002"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000251"/>
+        <obo:IAO_0000115>A regulatory interaction in which a transcription factor and a transcription unit have been identified as participants, and experimental evidence supports an effect of the transcription factor on transcription of the transcription unit, although the promoter, transcription factor regulatory site, or other mechanistic details are unknown.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">TF - transcription unit regulatory interaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBAGER_0000255 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000255">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000262"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000165"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000266"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000002"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000251"/>
+        <obo:IAO_0000115>A regulatory interaction in which a transcription factor bound to a transcription factor regulatory site and a transcription unit have been identified as participants, and experimental evidence supports an effect of the complex on transcription of the transcription unit, although the regulated promoter or additional mechanistic details are unknown.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">TF bound to TFRS  - TU regulatory interaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBAGER_0000256 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000256">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000262"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000165"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000266"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000001"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000251"/>
+        <obo:IAO_0000115>A regulatory interaction in which a transcription factor bound to a transcription factor regulatory site and a promoter have been identified as participants, and experimental evidence supports a role of the complex in regulating the activity of that promoter, although additional mechanistic details may be unknown.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">TF bound to TFRS - promoter regulatory interaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBAGER_0000257 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000257">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000262"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000165"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000266"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000185"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000251"/>
+        <obo:IAO_0000115>A regulatory interaction in which a transcription factor bound to a transcription factor regulatory site and a gene have been identified as participants, and experimental evidence supports an effect of the complex on expression of the gene, while the regulated promoter, transcription unit, or other mechanistic details are unknown.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">TF bound to TFRS - gene regulatory interaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBAGER_0000258 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000258">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000262"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000001"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000262"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000165"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000266"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000002"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000251"/>
+        <obo:IAO_0000115>A regulatory interaction in which a transcription factor bound to a transcription factor regulatory site, a promoter, and a transcription unit have been identified as participants, and in which the complex regulates transcription of the transcription unit through the promoter.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">TF bound to TFRS - promoter -transcription unit regulatory interaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBAGER_0000259 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000259">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000265"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000227"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000266"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000196"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000251"/>
+        <obo:IAO_0000115>A regulatory interaction in which a sRNA bound to a sRNA regulatory site, and a coding sequence have been identified as participants, and in which the complex regulates translation of the coding sequence.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">sRNA bound to sRNA regulatory binding site - CDS regulatory interaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBAGER_0000260 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000260">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000265"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000227"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000266"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SO_0000139"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000251"/>
+        <obo:IAO_0000115>A regulatory interaction in which a sRNA bound to a sRNA regulatory site, and a ribosome entry site have been identified as participants, and in which the complex regulates activity of the ribosome entry site.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">sRNA bound to sRNA regulatory binding site - ribosome entry site regulatory interaction</rdfs:label>
     </owl:Class>
     
 

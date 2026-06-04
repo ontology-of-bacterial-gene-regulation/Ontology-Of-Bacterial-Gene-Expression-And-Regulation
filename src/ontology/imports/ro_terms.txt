@@ -1,5 +1,6 @@
 http://purl.obolibrary.org/obo/RO_0002131 #overlaps
 http://purl.obolibrary.org/obo/RO_0000057 #has participant
+http://purl.obolibrary.org/obo/RO_0000056 #participates in
 http://purl.obolibrary.org/obo/RO_0002019 #has ligand
 http://purl.obolibrary.org/obo/RO_0002233 #has input
 http://purl.obolibrary.org/obo/RO_0002323 #mereotopologically related to
