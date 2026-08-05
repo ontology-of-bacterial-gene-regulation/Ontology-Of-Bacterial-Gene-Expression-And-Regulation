@@ -4281,7 +4281,7 @@ COB_0000013</obo:IAO_0000119>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000250"/>
-        <obo:IAO_0000115>An observed interaction in which one entity influences the activity of a regulator or basic expression machinery component, or affects the expression of a unit of expression.</obo:IAO_0000115>
+        <obo:IAO_0000115>An observed interaction in which one entity influences the activity of a regulator or basic expression machinery component, or affects the expression of a unit of expression in a signal–effector response context.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">regulatory interaction</rdfs:label>
     </owl:Class>
     
