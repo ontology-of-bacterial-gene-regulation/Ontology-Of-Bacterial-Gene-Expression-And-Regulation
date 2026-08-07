@@ -4004,7 +4004,7 @@ COB_0000013</obo:IAO_0000119>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:comment>a molecular entity that is required for the transcription or translation of a genetic element.</rdfs:comment>
+        <rdfs:comment>a molecular entity that is required for the execution of transcription or translation of a genetic element.</rdfs:comment>
         <rdfs:label xml:lang="en">basic expression machinery component</rdfs:label>
     </owl:Class>
     
