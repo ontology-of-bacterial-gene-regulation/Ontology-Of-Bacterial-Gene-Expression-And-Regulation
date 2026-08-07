@@ -1761,37 +1761,14 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000001">
         <owl:equivalentClass>
             <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000024"/>
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000025"/>
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000026"/>
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000027"/>
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000028"/>
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000029"/>
-                        </owl:unionOf>
-                    </owl:Class>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000209"/>
-                        <owl:someValuesFrom>
-                            <owl:Class>
-                                <owl:intersectionOf rdf:parseType="Collection">
-                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000185"/>
-                                    <owl:Restriction>
-                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000175"/>
-                                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                                        <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000011"/>
-                                    </owl:Restriction>
-                                </owl:intersectionOf>
-                            </owl:Class>
-                        </owl:someValuesFrom>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000274"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000287"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000024"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000025"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000026"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000027"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000028"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000029"/>
+                </owl:unionOf>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000297"/>
@@ -4750,8 +4727,33 @@ COB_0000013</obo:IAO_0000119>
     <!-- http://purl.obolibrary.org/obo/OBAGER_0000297 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000297">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000209"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000045"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000175"/>
+                                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                                        <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000011"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000274"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000287"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000045"/>
-        <rdfs:comment>A DNA segment responsible for guiding the initiation of DNA-templated transcription in a specified direction at a defined location in a DNA molecule, although this location might not be one single base.  A promoter guides transcription initiation in only one direction, with directionality determined by the strand on which its associated transcription start site resides.</rdfs:comment>
+        <rdfs:comment>A DNA segment responsible for guiding the initiation of DNA-templated transcription at a defined location in a DNA molecule, although this location might not be one single base. A promoter guides transcription initiation in only one direction, with directionality determined by the strand on which its associated transcription start site resides.</rdfs:comment>
         <rdfs:label xml:lang="en">prokaryotic promoter</rdfs:label>
     </owl:Class>
     
