@@ -1821,6 +1821,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
             </owl:Restriction>
         </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000094"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000299"/>
         <obo:IAO_0000115>A DNA segment delimited by different nonspurious TSS–TTS pairs.</obo:IAO_0000115>
         <obo:IAO_0000119>PMID: ﻿32665585</obo:IAO_0000119>
         <obo:OBAGER_0000033>TU</obo:OBAGER_0000033>
@@ -3615,6 +3616,7 @@ COB_0000013</obo:IAO_0000119>
                 <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000011"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000299"/>
         <obo:IAO_0000115>A gene is a DNA segment that contains the information to produce a functional molecule, which can be a peptidic chain or a functional non-coding RNA, or a non-functional copy of a parent gene (pseudogene).</obo:IAO_0000115>
         <rdfs:comment>Functional non-coding RNA includes tRNA, rRNA, small RNA</rdfs:comment>
         <rdfs:comment>Peptidic chain includes polypeptide and oligopeptide.</rdfs:comment>
