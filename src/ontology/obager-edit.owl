@@ -2966,7 +2966,7 @@ COB_0000013</obo:IAO_0000119>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000094"/>
         <obo:IAO_0000115>A set of adjacent genes whose transcription is coordinated by one transcription unit; by extension, a gene transcribed by a monocistronic transcription unit is considered as a single-gene operon.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">simple operon</rdfs:label>
+        <rdfs:label xml:lang="en">simple operon genes</rdfs:label>
     </owl:Class>
     
 
@@ -2983,7 +2983,7 @@ COB_0000013</obo:IAO_0000119>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000094"/>
         <obo:IAO_0000115>A set of adjacent genes whose transcription is coordinated through several mutually overlapping transcription units that are transcribed in the same direction and share at least one gene.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">complex operon</rdfs:label>
+        <rdfs:label xml:lang="en">complex operon genes</rdfs:label>
     </owl:Class>
     
 
@@ -4765,6 +4765,18 @@ COB_0000013</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000299">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000045"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000060"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000073"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000074"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A genomic organization unit composed of a set of adjacent genes whose transcription is coordinated by overlapping transcription units, and the associated transcriptional cis-regulatory elements. By  extension, a gene transcribed by a monocistronic transcription unit is considered as a single-gene operon.</obo:IAO_0000115>
         <rdfs:comment>On the RegulonDB website, the operon region begins at the most upstream regulatory site and ends at the transcription termination site of the last transcription unit (TU), and includes internal TFRSs and promoters. Thus, operon regions summarize all available information for maximal sets of overlapping TUs.
 
