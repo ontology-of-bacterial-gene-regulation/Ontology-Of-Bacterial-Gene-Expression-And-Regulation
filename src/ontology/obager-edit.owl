@@ -2444,6 +2444,13 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000180"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000299"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:label xml:lang="en">transcription unit with genes</rdfs:label>
     </owl:Class>
     
@@ -4801,7 +4808,7 @@ COB_0000013</obo:IAO_0000119>
                         </owl:intersectionOf>
                     </owl:Class>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000073"/>
                         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000060"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
@@ -4827,6 +4834,7 @@ However, from an ontological perspective, regulatory properties cannot be treate
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000299"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000301"/>
         <rdfs:label xml:lang="en">complex operon</rdfs:label>
     </owl:Class>
     
@@ -4923,6 +4931,116 @@ However, from an ontological perspective, regulatory properties cannot be treate
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBAGER_0000302 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000302">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000042"/>
+        <rdfs:label xml:lang="en">gene1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBAGER_0000303 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000303">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000042"/>
+        <rdfs:label xml:lang="en">gene2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBAGER_0000304 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000304">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000042"/>
+        <rdfs:label xml:lang="en">gene3</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBAGER_0000305 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000305">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000074"/>
+        <obo:OBAGER_0000073 rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000302"/>
+        <rdfs:label xml:lang="en">TU1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBAGER_0000306 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000306">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000074"/>
+        <obo:OBAGER_0000073 rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000303"/>
+        <obo:OBAGER_0000073 rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000304"/>
+        <rdfs:label xml:lang="en">TU2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBAGER_0000309 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000309">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000301"/>
+        <obo:OBAGER_0000073 rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000305"/>
+        <rdfs:label xml:lang="en">operon1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBAGER_0000310 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000310">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000300"/>
+        <obo:OBAGER_0000073 rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000306"/>
+        <obo:OBAGER_0000073 rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000311"/>
+        <rdfs:label xml:lang="en">operon2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBAGER_0000311 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000311">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000074"/>
+        <obo:OBAGER_0000073 rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000304"/>
+        <obo:OBAGER_0000073 rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000312"/>
+        <rdfs:label xml:lang="en">TU3</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBAGER_0000312 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000312">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000042"/>
+        <rdfs:label xml:lang="en">gene4</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBAGER_0000313 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000313">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000116"/>
+        <obo:RO_0002351 rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000302"/>
+        <rdfs:label xml:lang="en">operon2 genes</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
     // General axioms
     //
     ///////////////////////////////////////////////////////////////////////////////////////
@@ -4961,6 +5079,14 @@ However, from an ontological perspective, regulatory properties cannot be treate
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000202"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000203"/>
         </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000305"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000306"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000311"/>
+        </owl:distinctMembers>
     </rdf:Description>
 </rdf:RDF>
 
