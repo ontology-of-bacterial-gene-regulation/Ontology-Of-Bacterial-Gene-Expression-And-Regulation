@@ -4835,6 +4835,7 @@ However, from an ontological perspective, regulatory properties cannot be treate
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000299"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000301"/>
+        <obo:IAO_0000115>A genomic organization unit composed of a set of adjacent genes whose transcription is coordinated by two or more overlapping transcription units, and the associated transcriptional cis-regulatory elements. By  extension, a gene transcribed by multiple transcription units all of which contain the same single gene is considered as a single-gene operon.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">complex operon</rdfs:label>
     </owl:Class>
     
@@ -4851,6 +4852,7 @@ However, from an ontological perspective, regulatory properties cannot be treate
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000299"/>
+        <obo:IAO_0000115>A genomic organization unit composed of a set of adjacent genes whose transcription is coordinated by a single transcription unit, and the associated transcriptional cis-regulatory elements. By  extension, a gene transcribed in a single monocistronic transcription unit is considered as a single-gene operon.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">simple operon</rdfs:label>
     </owl:Class>
     
