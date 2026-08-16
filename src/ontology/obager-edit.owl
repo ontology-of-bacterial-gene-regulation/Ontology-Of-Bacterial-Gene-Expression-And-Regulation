@@ -4372,7 +4372,7 @@ COB_0000013</obo:IAO_0000119>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000262"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000165"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000295"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000266"/>
@@ -4421,7 +4421,7 @@ COB_0000013</obo:IAO_0000119>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000262"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000165"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000295"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000266"/>
