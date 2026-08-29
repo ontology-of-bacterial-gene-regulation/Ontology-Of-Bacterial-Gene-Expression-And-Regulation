@@ -3019,14 +3019,24 @@ COB_0000013</obo:IAO_0000119>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000117">
         <owl:equivalentClass>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000276"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002351"/>
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000251"/>
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000215"/>
                             <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000266"/>
-                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000080"/>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000276"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000251"/>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000261"/>
+                                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000080"/>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
                             </owl:Restriction>
                         </owl:intersectionOf>
                     </owl:Class>
@@ -3376,10 +3386,10 @@ COB_0000013</obo:IAO_0000119>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000032"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>a complex of molecular entities formed by a transcription factor and a molecular effector</obo:IAO_0000115>
+        <obo:IAO_0000115>a complex of molecular entities formed by a protein and a molecular effector</obo:IAO_0000115>
         <rdfs:comment>Here we intend to include both  non-covalently and covalently bound  ligands, so methylated and phosphorylated forms can be included. The interaction property &quot;covalent&quot; or &quot;non-covalent&quot; should be added to specific instances of the class.</rdfs:comment>
         <rdfs:comment>When the issue of the ligand superproperties in RO is resolved, maybe It is better to use &apos;has ligand&apos; to link this class to the effector class.</rdfs:comment>
-        <rdfs:label xml:lang="en">TF bound to ligand</rdfs:label>
+        <rdfs:label xml:lang="en">protein bound to ligand</rdfs:label>
     </owl:Class>
     
 
@@ -3398,8 +3408,8 @@ COB_0000013</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000160">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000167"/>
-        <obo:IAO_0000115>a TF alternative state that results of the modification of the TF by a physical effector sucha as light or termperature</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">TF modified by physical effector</rdfs:label>
+        <obo:IAO_0000115>a protein alternative state that results of the modification of the protein by a physical effector sucha as light or termperature</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">protein modified by physical effector</rdfs:label>
     </owl:Class>
     
 
@@ -3408,8 +3418,8 @@ COB_0000013</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000161">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000167"/>
-        <obo:IAO_0000115>a TF alternative state that is a consequence of proteolysis of the TF</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">lysed TF</rdfs:label>
+        <obo:IAO_0000115>a protein alternative state that is a consequence of proteolysis of the protein</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">lysed protein</rdfs:label>
     </owl:Class>
     
 
@@ -3418,8 +3428,8 @@ COB_0000013</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000162">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000167"/>
-        <obo:IAO_0000115>a structural state in which a TF is physically bound by another protein, preventing it from accessing its DNA binding site</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">TF sequestered by protein</rdfs:label>
+        <obo:IAO_0000115>a structural state in which a protein is physically bound by another protein, preventing it from accessing its DNA binding site</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">protein sequestered by protein</rdfs:label>
     </owl:Class>
     
 
@@ -3428,8 +3438,8 @@ COB_0000013</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000163">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000167"/>
-        <obo:IAO_0000115>a TF structural state in which it has formed a multimer with one or more units of protein</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">multimeric TF</rdfs:label>
+        <obo:IAO_0000115>a protein structural state in which it has formed a multimer with one or more units of polypeptide</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">multimeric protein</rdfs:label>
     </owl:Class>
     
 
@@ -3486,7 +3496,7 @@ COB_0000013</obo:IAO_0000119>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>a structural state in which the TF has not undergone post-translational modifications that alter its regulatory capacity</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">unmodified TF</rdfs:label>
+        <rdfs:label xml:lang="en">unmodified protein</rdfs:label>
     </owl:Class>
     
 
@@ -3495,8 +3505,8 @@ COB_0000013</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000167">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000229"/>
-        <obo:IAO_0000115>the state of a TF after being modified by an effector</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">modified TF</rdfs:label>
+        <obo:IAO_0000115>the state of a protein after being modified by an effector</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">modified protein</rdfs:label>
     </owl:Class>
     
 
@@ -4155,15 +4165,19 @@ COB_0000013</obo:IAO_0000119>
     <!-- http://purl.obolibrary.org/obo/OBAGER_0000229 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000229">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000158"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000291"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000032"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000115>an alternative state of a transcription factor (TF) characterized by molecular configurations or modifications that affect the TF activity, stability, or interactions, thereby affecting its regulatory activity on gene expression</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">TF structural state</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000158"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000291"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000075"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <obo:IAO_0000115>an alternative state of a protein characterized by molecular configurations or modifications that affect the protein activity, stability, or interactions, thereby affecting its regulatory activity on gene expression</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">protein structural state</rdfs:label>
     </owl:Class>
     
 
@@ -4227,7 +4241,7 @@ COB_0000013</obo:IAO_0000119>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>An RNA segment where a sRNA specifically binds and regulates translation.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">sRNA regulatory binding site</rdfs:label>
+        <rdfs:label xml:lang="en">sRNA regulatory binding site in the mRNA</rdfs:label>
     </owl:Class>
     
 
@@ -4708,46 +4722,8 @@ COB_0000013</obo:IAO_0000119>
     <!-- http://purl.obolibrary.org/obo/OBAGER_0000295 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000295">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000238"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000004"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000296"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000274"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000286"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000238"/>
         <rdfs:label xml:lang="en">protein bound to DNA site</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBAGER_0000296 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000296">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000158"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000291"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000075"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:label xml:lang="en">protein structural state</rdfs:label>
     </owl:Class>
     
 
