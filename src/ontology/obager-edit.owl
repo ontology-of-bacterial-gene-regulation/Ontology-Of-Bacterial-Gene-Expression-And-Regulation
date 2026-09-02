@@ -2110,6 +2110,8 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000031">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000045"/>
         <obo:IAO_0000115>The first deoxyribonucleotide that serves as a template for RNA synthesis.</obo:IAO_0000115>
+        <obo:OBAGER_0000033>TSS</obo:OBAGER_0000033>
+        <obo:OBAGER_0000033>transcription start site in DNA</obo:OBAGER_0000033>
         <rdfs:label xml:lang="en">transcription start site</rdfs:label>
     </owl:Class>
     
@@ -2367,6 +2369,8 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000062">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000045"/>
         <obo:IAO_0000115>The last deoxyribonucleotide that serves as a template for RNA synthesis.</obo:IAO_0000115>
+        <obo:OBAGER_0000033>TTS</obo:OBAGER_0000033>
+        <obo:OBAGER_0000033>transcription termination site in DNA</obo:OBAGER_0000033>
         <rdfs:label xml:lang="en">transcription termination site</rdfs:label>
     </owl:Class>
     
