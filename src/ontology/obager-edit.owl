@@ -3720,8 +3720,8 @@ COB_0000013</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000191">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000195"/>
-        <obo:IAO_0000115>A conditionally active macromolecular regulator functional disposition that is currently realized; that is, the TF is in a molecular state that enables it to bind its target nucleotide site and modulate transcription or translation.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">biomacromolecular regulator active state</rdfs:label>
+        <obo:IAO_0000115>A conditionally active macromolecular regulator functional disposition that is currently realized; that is, the TF is in a modified molecular state that enables it to bind its target nucleotide site and modulate transcription or translation.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">biomacromolecular regulator conditionally active state</rdfs:label>
     </owl:Class>
     
 
@@ -3731,7 +3731,7 @@ COB_0000013</obo:IAO_0000119>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000192">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000195"/>
         <obo:IAO_0000115>A conditionally active macromolecular regulator functional disposition that is currently not realized due to the absence of necessary enabling conditions, such as lack of effector binding, absence of covalent modification, or sequestration by another molecule.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">biomacromolecular regulator inactive state</rdfs:label>
+        <rdfs:label xml:lang="en">biomacromolecular regulator conditionally inactive state</rdfs:label>
     </owl:Class>
     
 
