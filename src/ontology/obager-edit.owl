@@ -1054,10 +1054,6 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000273">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000271"/>
         <owl:propertyChainAxiom rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000091"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000273"/>
-        </owl:propertyChainAxiom>
-        <owl:propertyChainAxiom rdf:parseType="Collection">
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000291"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000273"/>
         </owl:propertyChainAxiom>
@@ -1072,10 +1068,6 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000274">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000273"/>
         <owl:propertyChainAxiom rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000091"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000274"/>
-        </owl:propertyChainAxiom>
-        <owl:propertyChainAxiom rdf:parseType="Collection">
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000291"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000274"/>
         </owl:propertyChainAxiom>
@@ -1089,10 +1081,6 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000275">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000273"/>
-        <owl:propertyChainAxiom rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000091"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000275"/>
-        </owl:propertyChainAxiom>
         <owl:propertyChainAxiom rdf:parseType="Collection">
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000291"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000275"/>
@@ -2557,8 +2545,8 @@ A genomically specified regulator that is a molecule that is the product of tran
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000205"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000294"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000288"/>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000091"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000315"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -2577,8 +2565,8 @@ A genomically specified regulator that is a molecule that is the product of tran
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000080"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000274"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000251"/>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000091"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000218"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -2597,8 +2585,8 @@ A genomically specified regulator that is a molecule that is the product of tran
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000083"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000274"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000287"/>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000091"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000314"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -3813,8 +3801,8 @@ COB_0000013</obo:IAO_0000119>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000080"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000275"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000251"/>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000091"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000217"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -4158,7 +4146,7 @@ COB_0000013</obo:IAO_0000119>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000275"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000294"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000288"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -4752,6 +4740,45 @@ However, from an ontological perspective, regulatory properties cannot be treate
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000299"/>
         <obo:IAO_0000115>A genomic organization unit composed of a set of adjacent genes whose transcription is coordinated by a single transcription unit, and the associated transcriptional cis-regulatory elements. By  extension, a gene transcribed in a single monocistronic transcription unit is considered as a single-gene operon.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">simple operon</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBAGER_0000314 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000314">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000060"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000274"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000287"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000218"/>
+        <rdfs:label xml:lang="en">cis-acting regulator of transcription initiation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBAGER_0000315 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000315">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBAGER_0000217"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000294"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBAGER_0000288"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label xml:lang="en">cis-acting regulator of translation</rdfs:label>
     </owl:Class>
     
 
